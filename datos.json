@@ -5,14 +5,17 @@
     "lemaParte2": "LA SALUD NUESTRO MENSAJE.",
     "subtitulo": "“COLECTIVO JUVENIL PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”",
     "bannerDerecho": "CONOCE A MUSA · ARTE Y SALUD EN COMUNIDAD",
-    "logo": "/img/LOGO_2026 (1).png"
+    "logo": "/img/LOGO_2026 (1).png",
+    "fotoPortada": "/img/Portada_musa.webp"
   },
   "identidad": {
     "quienesTitulo": "¿QUIÉNES SOMOS?",
     "quienesTexto": "Somos **MUSA**, un colectivo juvenil para la promoción y educación en salud a través de la **arteterapia** como intervención de enfermería. Reunimos expresión creativa y cuidado disciplinar para acercar herramientas de bienestar a la comunidad.",
+    "fotoQuienes": "/img/Ejes_MUSA-1.png",
     "enfermeriaTitulo": "LIDERAZGO DESDE EL CUIDADO",
     "enfermeriaSubtitulo": "EL NÚCLEO DE ENFERMERÍA",
     "enfermeriaTexto1": "El liderazgo y el subliderazgo de MUSA se sostienen desde **Enfermería**, garantizando que cada actividad tenga sustento educativo, preventivo y humano.",
+    "fotoEnfermeria": "/img/Portada_musa.png",
     "enfermeriaTexto2": "Aunque la conducción principal es de Enfermería, la participación está abierta a distintas licenciaturas para enriquecer cada brigada y proyecto.",
     "enfermeriaPuntos": [
       "Promoción y educación en salud con enfoque de enfermería",
@@ -26,17 +29,20 @@
       {
         "titulo": "PROMOCIÓN DE LA SALUD",
         "subtitulo": "Educación y autocuidado",
-        "descripcion": "Acercamos información clara y herramientas prácticas de cuidado preventivo y bienestar emocional."
+        "descripcion": "Acercamos información clara y herramientas prácticas de cuidado preventivo y bienestar emocional.",
+        "imagen": "/img/1.webp"
       },
       {
         "titulo": "ARTETERAPIA",
         "subtitulo": "Intervención creativa",
-        "descripcion": "Utilizamos procesos artísticos guiados para favorecer la expresión, el vínculo y el manejo emocional."
+        "descripcion": "Utilizamos procesos artísticos guiados para favorecer la expresión, el vínculo y el manejo emocional.",
+        "imagen": "/img/2.webp"
       },
       {
         "titulo": "CAPÍTULOS Y BRIGADAS",
         "subtitulo": "Impacto comunitario",
-        "descripcion": "Impulsamos equipos locales y brigadas educativas en escuelas, casas hogar y espacios comunitarios."
+        "descripcion": "Impulsamos equipos locales y brigadas educativas en escuelas, casas hogar y espacios comunitarios.",
+        "imagen": "/img/3.webp"
       }
     ]
   },
@@ -93,7 +99,8 @@
       "url": "https://lasallebjx.somosmusa.com.mx",
       "ubicacion": "León, Guanajuato",
       "estado": "Capítulo Activo",
-      "resumen": "Equipo estudiantil impulsando promoción y educación en salud a través de la arteterapia, brigadas comunitarias y actividades campus."
+      "resumen": "Nuestro primer capitulo estudiantil.\nEquipo estudiantil impulsando promoción y educación en salud a través de la arteterapia, brigadas comunitarias y actividades campus.",
+      "imagen": "/img/enf.webp"
     }
   ],
   "modeloHibrido": {
@@ -125,35 +132,16 @@
   },
   "noticias": [
     {
-      "titulo": "Lanzamiento de la nueva web de MUSA",
-      "fecha": "Noviembre 2026",
-      "tags": [
-        "post",
-        "destacado"
-      ],
-      "resumen": "Conoce cómo organizamos nuestras vistas, capítulos estudiantiles, colaboraciones y entradas del blog.",
-      "contenido": "En **MUSA** presentamos nuestra nueva organización digital para facilitar el acceso a **Colaboraciones**, **Crea un Capítulo Estudiantil** y nuestro **Blog**.\n\n- **Enfoque:** Promoción y educación en salud a través de la arteterapia como intervención de enfermería.\n- **Lema:** *El arte nuestro lenguaje, la salud nuestro mensaje*."
-    },
-    {
       "titulo": "Cómo conformar un Capítulo Estudiantil MUSA",
-      "fecha": "Noviembre 2026",
+      "fecha": "24 Noviembre 2026",
       "tags": [
         "post",
         "destacado",
         "capitulos"
       ],
+      "imagen": "/img/Ejes_MUSA.png",
       "resumen": "Revisa la estructura base de 10 integrantes y los requisitos para postular un capítulo en tu campus.",
-      "contenido": "Cada capítulo inicia con **10 integrantes** distribuidos entre Líderes Generales, Líderes de Proyecto, Sublíderes y Mentor Académico, manteniendo liderazgo y subliderazgo en **Enfermería** y apertura a todas las licenciaturas."
-    },
-    {
-      "titulo": "Arteterapia y cuidado en espacios comunitarios",
-      "fecha": "Noviembre 2026",
-      "tags": [
-        "post",
-        "colaboraciones"
-      ],
-      "resumen": "Reflexiones sobre cómo el arte y la educación en salud fortalecen el bienestar colectivo.",
-      "contenido": "Las actividades creativas estructuradas permiten abordar temas de autocuidado, emociones y convivencia de forma participativa."
+      "contenido": "Cada capítulo inicia con **10 integrantes** distribuidos entre Líderes Generales, Líderes de Proyecto, Sublíderes y Mentor Académico, manteniendo liderazgo y subliderazgo en **Enfermería** y apertura a todas las licenciaturas.\n\nPara poder **crear un capítulo estudiantil** es necesario llenar el formulario de nuestra página o envíar correo a **capitulos@somosmusa.com.mx** tomando en cuenta quién será su representante y quienes serán los miembros de la **mesa directiva del capítulo**, los costos y el proceso se les harán saber a más tardar 15 días después de enviar tu información.\n\nSi necesitas más información sobre que son los Capítulos Estudiantiles o como funcionan, puedes contactarnos en **contacto@somosmusa.com.mx**"
     }
   ],
   "contacto": {
