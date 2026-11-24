@@ -1,165 +1,261 @@
-{
-  "portada": {
-    "nombre": "MUSA",
-    "lemaParte1": "EL ARTE NUESTRO LENGUAJE,",
-    "lemaParte2": "LA SALUD NUESTRO MENSAJE.",
-    "subtitulo": "“GRUPO ESTUDIANTIL PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA (COMO INTERVENCIÓN DE ENFERMERÍA)”",
-    "bannerDerecho": "CONOCE A MUSA · ARTE Y SALUD EN COMUNIDAD",
-    "logo": "",
-    "fotoPortada": ""
-  },
-  "identidad": {
-    "quienesTitulo": "¿QUIÉNES SOMOS?",
-    "quienesTexto": "Somos **MUSA**, un grupo estudiantil para la promoción y educación en salud a través de la **arteterapia** como intervención de enfermería. Reunimos expresión creativa y cuidado disciplinar para acercar herramientas de bienestar a la comunidad.",
-    "fotoQuienes": "",
-    "enfermeriaTitulo": "LIDERAZGO DESDE EL CUIDADO",
-    "enfermeriaSubtitulo": "EL NÚCLEO DE ENFERMERÍA",
-    "enfermeriaTexto1": "El liderazgo y el subliderazgo de MUSA se sostienen desde **Enfermería**, garantizando que cada actividad tenga sustento educativo, preventivo y humano.",
-    "fotoEnfermeria": "",
-    "enfermeriaTexto2": "Aunque la conducción principal es de Enfermería, la participación está abierta a distintas licenciaturas para enriquecer cada brigada y proyecto.",
-    "enfermeriaPuntos": [
-      "Promoción y educación en salud con enfoque de enfermería",
-      "Arteterapia como intervención participativa y cercana",
-      "Liderazgo y subliderazgo en Enfermería con apertura multidisciplinaria"
-    ]
-  },
-  "ejes": {
-    "intro": "Articulamos la educación en salud, la expresión artística y el trabajo comunitario en tres ejes.",
-    "lista": [
-      {
-        "titulo": "PROMOCIÓN DE LA SALUD",
-        "subtitulo": "Educación y autocuidado",
-        "descripcion": "Acercamos información clara y herramientas prácticas de cuidado preventivo y bienestar emocional.",
-        "imagen": ""
-      },
-      {
-        "titulo": "ARTETERAPIA",
-        "subtitulo": "Intervención creativa",
-        "descripcion": "Utilizamos procesos artísticos guiados para favorecer la expresión, el vínculo y el manejo emocional.",
-        "imagen": ""
-      },
-      {
-        "titulo": "CAPÍTULOS Y BRIGADAS",
-        "subtitulo": "Impacto comunitario",
-        "descripcion": "Impulsamos equipos locales y brigadas educativas en escuelas, casas hogar y espacios comunitarios.",
-        "imagen": ""
-      }
-    ]
-  },
-  "conviccion": {
-    "frasePrincipal": "“EL ARTE ABRE PUERTAS DONDE A VECES NO LLEGAN LAS PALABRAS; LA ENFERMERÍA LE DA RUMBO DE CUIDADO.”",
-    "pilares": [
-      {
-        "titulo": "FUNDAMENTO EN SALUD",
-        "descripcion": "Cada dinámica parte de objetivos reales de promoción y educación para la salud."
-      },
-      {
-        "titulo": "EXPRESIÓN ACCESIBLE",
-        "descripcion": "Las artes visuales, escénicas, musicales y manuales facilitan la participación de todas las edades."
-      },
-      {
-        "titulo": "TRABAJO ARTICULADO",
-        "descripcion": "Colaboramos con instituciones, escuelas, organizaciones y capítulos estudiantiles."
-      }
-    ],
-    "fraseCierreHtml": "SALUD + ARTETERAPIA + <span>COMUNIDAD</span>"
-  },
-  "capitulos": {
-    "etiqueta": "Gobernanza y Capítulos Estudiantiles",
-    "intro": "Cada capítulo local opera con una base estructurada de **10 integrantes**, con liderazgo y subliderazgo de **Enfermería** y participación abierta a otras carreras.",
-    "formspreeUrl": "https://formsubmit.co/contacto@somosmusa.com.mx",
-    "roles": [
-      {
-        "cantidad": "2",
-        "cargo": "Líderes Generales",
-        "descripcion": "Dirección general del capítulo, representación y seguimiento estratégico."
-      },
-      {
-        "cantidad": "3",
-        "cargo": "Líderes de Proyecto",
-        "descripcion": "Planeación y ejecución de talleres, brigadas y actividades temáticas."
-      },
-      {
-        "cantidad": "4",
-        "cargo": "Sublíderes",
-        "descripcion": "Apoyo operativo, logística, materiales, difusión y seguimiento interno."
-      },
-      {
-        "cantidad": "1",
-        "cargo": "Mentor Académico",
-        "descripcion": "Acompañamiento formativo y respaldo académico para el capítulo."
-      }
-    ],
-    "requisitos": "Base mínima de 10 integrantes por capítulo, liderazgo y subliderazgo ejercidos por estudiantes de Enfermería, participación multidisciplinaria abierta y alineación con los lineamientos de MUSA."
-  },
-  "capitulosCreados": [
-    {
-      "nombre": "Capítulo La Salle Bajío",
-      "subdominio": "lasallebjx.somosmusa.com.mx",
-      "url": "https://lasallebjx.somosmusa.com.mx",
-      "ubicacion": "León, Guanajuato",
-      "estado": "Capítulo Activo",
-      "resumen": "Equipo estudiantil impulsando promoción y educación en salud a través de la arteterapia, brigadas comunitarias y actividades campus.",
-      "imagen": ""
-    }
-  ],
-  "modeloHibrido": {
-    "titulo": "COLABORA CON MUSA",
-    "intro": "Trabajamos bajo un esquema híbrido que conecta servicios institucionales con brigadas comunitarias.",
-    "formspreeUrl": "https://formsubmit.co/contacto@somosmusa.com.mx",
-    "sectorPrivado": {
-      "etiqueta": "Instituciones y Servicios",
-      "titulo": "INTERVENCIONES Y SERVICIOS",
-      "descripcion": "Talleres, jornadas y dinámicas de promoción de la salud y arteterapia para escuelas, empresas, eventos y organizaciones.",
-      "puntos": [
-        "Cotización formal según alcance, fechas y número de participantes",
-        "Adaptación de materiales y objetivos institucionales",
-        "Contribuye a sostener el trabajo comunitario de MUSA"
-      ],
-      "textoBoton": "Solicitar cotización"
-    },
-    "sectorPublico": {
-      "etiqueta": "Brigadas y Comunidades",
-      "titulo": "BRIGADAS COMUNITARIAS",
-      "descripcion": "Intervenciones educativas y de arteterapia para comunidades, casas hogar, espacios públicos y causas sociales.",
-      "puntos": [
-        "Esquema de cuotas accesibles, apoyo o evaluación de beca",
-        "Enfoque preventivo y de educación para la salud",
-        "Coordinación con equipos y capítulos de MUSA"
-      ],
-      "textoBoton": "Solicitar brigada"
-    }
-  },
-  "noticias": [
-    {
-      "titulo": "Lanzamiento de la nueva web de MUSA",
-      "fecha": "Noviembre 2026",
-      "tags": ["post", "destacado"],
-      "imagen": "",
-      "resumen": "Conoce cómo organizamos nuestras vistas, capítulos estudiantiles, colaboraciones y entradas del blog.",
-      "contenido": "En **MUSA** presentamos nuestra nueva organización digital para facilitar el acceso a **Colaboraciones**, **Crea un Capítulo Estudiantil** y nuestro **Blog**.\n\n- **Enfoque:** Promoción y educación en salud a través de la arteterapia como intervención de enfermería.\n- **Lema:** *El arte nuestro lenguaje, la salud nuestro mensaje*."
-    },
-    {
-      "titulo": "Cómo conformar un Capítulo Estudiantil MUSA",
-      "fecha": "Noviembre 2026",
-      "tags": ["post", "destacado", "capitulos"],
-      "imagen": "",
-      "resumen": "Revisa la estructura base de 10 integrantes y los requisitos para postular un capítulo en tu campus.",
-      "contenido": "Cada capítulo inicia con **10 integrantes** distribuidos entre Líderes Generales, Líderes de Proyecto, Sublíderes y Mentor Académico, manteniendo liderazgo y subliderazgo en **Enfermería** y apertura a todas las licenciaturas."
-    },
-    {
-      "titulo": "Arteterapia y cuidado en espacios comunitarios",
-      "fecha": "Noviembre 2026",
-      "tags": ["post", "colaboraciones"],
-      "imagen": "",
-      "resumen": "Reflexiones sobre cómo el arte y la educación en salud fortalecen el bienestar colectivo.",
-      "contenido": "Las actividades creativas estructuradas permiten abordar temas de autocuidado, emociones y convivencia de forma participativa."
-    }
-  ],
-  "contacto": {
-    "textoFooter": "MUSA · El arte nuestro lenguaje, la salud nuestro mensaje",
-    "instagramUrl": "https://instagram.com",
-    "instagramHandle": "@somosmusa",
-    "correo": "contacto@somosmusa.com.mx"
-  }
-}
+media:
+  input: img
+  output: img
+content:
+  - name: datos_musa
+    label: Contenido de MUSA
+    type: file
+    path: datos.json
+    format: json
+    fields:
+      - name: portada
+        label: Portada
+        type: object
+        fields:
+          - name: nombre
+            label: Nombre
+            type: string
+          - name: lemaParte1
+            label: Lema (parte 1)
+            type: string
+          - name: lemaParte2
+            label: Lema (parte 2)
+            type: string
+          - name: subtitulo
+            label: Subtítulo oficial
+            type: text
+          - name: bannerDerecho
+            label: Banner lateral derecho
+            type: string
+          - name: logo
+            label: Logotipo
+            type: image
+          - name: fotoPortada
+            label: Fotografía de portada
+            type: image
+      - name: identidad
+        label: Quiénes Somos y Enfermería
+        type: object
+        fields:
+          - name: quienesTitulo
+            label: Título ¿Quiénes somos?
+            type: string
+          - name: quienesTexto
+            label: Texto ¿Quiénes somos? (Markdown)
+            type: text
+          - name: fotoQuienes
+            label: Foto ¿Quiénes somos?
+            type: image
+          - name: enfermeriaTitulo
+            label: Título Liderazgo desde el Cuidado
+            type: string
+          - name: enfermeriaSubtitulo
+            label: Subtítulo del núcleo
+            type: string
+          - name: enfermeriaTexto1
+            label: Párrafo 1 (Markdown)
+            type: text
+          - name: fotoEnfermeria
+            label: Foto Enfermería
+            type: image
+          - name: enfermeriaTexto2
+            label: Párrafo 2 (Markdown)
+            type: text
+          - name: enfermeriaPuntos
+            label: Puntos clave
+            type: string
+            list: true
+      - name: ejes
+        label: Nuestros 3 Ejes
+        type: object
+        fields:
+          - name: intro
+            label: Introducción
+            type: text
+          - name: lista
+            label: Ejes
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: descripcion
+                label: Descripción (Markdown)
+                type: text
+              - name: imagen
+                label: Imagen del eje
+                type: image
+      - name: conviccion
+        label: Nuestra Convicción
+        type: object
+        fields:
+          - name: frasePrincipal
+            label: Frase principal
+            type: text
+          - name: pilares
+            label: Pilares de colaboración
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+          - name: fraseCierreHtml
+            label: Frase de cierre (HTML)
+            type: text
+      - name: capitulos
+        label: Capítulos Estudiantiles (Estructura y Formulario)
+        type: object
+        fields:
+          - name: etiqueta
+            label: Etiqueta superior
+            type: string
+          - name: intro
+            label: Introducción (Markdown)
+            type: text
+          - name: formspreeUrl
+            label: URL de formulario de capítulos
+            type: string
+          - name: roles
+            label: Roles del capítulo
+            type: object
+            list: true
+            fields:
+              - name: cantidad
+                label: Cantidad
+                type: string
+              - name: cargo
+                label: Cargo
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+          - name: requisitos
+            label: Requisitos
+            type: text
+      - name: capitulosCreados
+        label: Capítulos Creados (Carrusel y Micrositios)
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            label: Nombre del capítulo
+            type: string
+          - name: subdominio
+            label: Subdominio (ej. lasallebjx.somosmusa.com.mx)
+            type: string
+          - name: url
+            label: Enlace completo del micrositio
+            type: string
+          - name: ubicacion
+            label: Ubicación
+            type: string
+          - name: estado
+            label: Estado
+            type: string
+          - name: resumen
+            label: Resumen
+            type: text
+          - name: imagen
+            label: Imagen del capítulo
+            type: image
+      - name: modeloHibrido
+        label: Colaboraciones y Modelo Híbrido
+        type: object
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+          - name: intro
+            label: Introducción
+            type: text
+          - name: formspreeUrl
+            label: URL de formulario de colaboraciones
+            type: string
+          - name: sectorPrivado
+            label: Columna 1 (Intervenciones / Servicios)
+            type: object
+            fields:
+              - name: etiqueta
+                label: Etiqueta
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+              - name: puntos
+                label: Puntos
+                type: string
+                list: true
+              - name: textoBoton
+                label: Texto del botón
+                type: string
+          - name: sectorPublico
+            label: Columna 2 (Brigadas Comunitarias)
+            type: object
+            fields:
+              - name: etiqueta
+                label: Etiqueta
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+              - name: puntos
+                label: Puntos
+                type: string
+                list: true
+              - name: textoBoton
+                label: Texto del botón
+                type: string
+      - name: noticias
+        label: Entradas del Blog (usa tags como post, destacado, capitulos)
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+          - name: fecha
+            label: Fecha
+            type: string
+          - name: tags
+            label: Etiquetas (tags)
+            type: string
+            list: true
+          - name: imagen
+            label: Imagen de portada
+            type: image
+          - name: resumen
+            label: Resumen
+            type: text
+          - name: contenido
+            label: Contenido (Markdown)
+            type: text
+      - name: contacto
+        label: Pie de página y Contacto
+        type: object
+        fields:
+          - name: textoFooter
+            label: Texto del pie de página
+            type: string
+          - name: instagramUrl
+            label: Enlace de Instagram
+            type: string
+          - name: instagramHandle
+            label: Usuario de Instagram
+            type: string
+          - name: correo
+            label: Correo de contacto
+            type: string
