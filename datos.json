@@ -14,7 +14,7 @@
     "fotoQuienes": "",
     "enfermeriaTitulo": "LIDERAZGO DESDE EL CUIDADO",
     "enfermeriaSubtitulo": "EL NÚCLEO DE ENFERMERÍA",
-    "enfermeriaTexto1": "El liderazgo y la subliderazgo de MUSA se sostienen desde **Enfermería**, garantizando que cada actividad tenga sustento educativo, preventivo y humano.",
+    "enfermeriaTexto1": "El liderazgo y el subliderazgo de MUSA se sostienen desde **Enfermería**, garantizando que cada actividad tenga sustento educativo, preventivo y humano.",
     "fotoEnfermeria": "",
     "enfermeriaTexto2": "Aunque la conducción principal es de Enfermería, la participación está abierta a distintas licenciaturas para enriquecer cada brigada y proyecto.",
     "enfermeriaPuntos": [
@@ -67,7 +67,7 @@
   "capitulos": {
     "etiqueta": "Gobernanza y Capítulos Estudiantiles",
     "intro": "Cada capítulo local opera con una base estructurada de **10 integrantes**, con liderazgo y subliderazgo de **Enfermería** y participación abierta a otras carreras.",
-    "formspreeUrl": "#",
+    "formspreeUrl": "https://formsubmit.co/contacto@somosmusa.com.mx",
     "roles": [
       {
         "cantidad": "2",
@@ -106,7 +106,7 @@
   "modeloHibrido": {
     "titulo": "COLABORA CON MUSA",
     "intro": "Trabajamos bajo un esquema híbrido que conecta servicios institucionales con brigadas comunitarias.",
-    "formspreeUrl": "#",
+    "formspreeUrl": "https://formsubmit.co/contacto@somosmusa.com.mx",
     "sectorPrivado": {
       "etiqueta": "Instituciones y Servicios",
       "titulo": "INTERVENCIONES Y SERVICIOS",
