@@ -1,0 +1,128 @@
+media:
+  input: img
+  output: img
+
+content:
+  - name: sitio_musa
+    label: Contenido Web y Blog MUSA
+    type: file
+    path: datos.json
+    format: json
+    fields:
+      - name: portada
+        label: 1. Portada y Logotipo
+        type: object
+        fields:
+          - { name: nombre, label: Nombre principal, type: string }
+          - { name: lemaParte1, label: Lema (Línea 1 - Lila), type: string }
+          - { name: lemaParte2, label: Lema (Línea 2 - Azul), type: string }
+          - { name: subtitulo, label: Subtítulo oficial, type: string }
+          - { name: bannerDerecho, label: Texto banner derecho, type: string }
+          - { name: logo, label: Logotipo MUSA, type: image }
+          - { name: fotoPortada, label: Fotografía de Portada, type: image }
+
+      - name: identidad
+        label: 2. Quiénes Somos y Núcleo de Enfermería
+        type: object
+        fields:
+          - { name: quienesTitulo, label: Título ¿Quiénes somos?, type: string }
+          - { name: quienesTexto, label: Texto ¿Quiénes somos? (soporta negritas), type: rich-text }
+          - { name: fotoQuienes, label: Foto de actividad (Quiénes somos), type: image }
+          - { name: enfermeriaTitulo, label: Título Enfermería, type: string }
+          - { name: enfermeriaSubtitulo, label: Subtítulo Enfermería, type: string }
+          - { name: enfermeriaTexto1, label: Párrafo 1 Enfermería, type: rich-text }
+          - { name: fotoEnfermeria, label: Foto equipo Enfermería, type: image }
+          - { name: enfermeriaTexto2, label: Párrafo 2 (PAE), type: rich-text }
+          - { name: enfermeriaPuntos, label: Lista de puntos clave, type: string, list: true }
+
+      - name: ejes
+        label: 3. Nuestros 3 Ejes
+        type: object
+        fields:
+          - { name: intro, label: Introducción de los ejes, type: string }
+          - name: lista
+            label: Tarjetas de Ejes
+            type: object
+            list: true
+            fields:
+              - { name: titulo, label: Título del eje, type: string }
+              - { name: subtitulo, label: Subtítulo corto, type: string }
+              - { name: descripcion, label: Descripción, type: rich-text }
+              - { name: imagen, label: Fotografía del eje, type: image }
+
+      - name: conviccion
+        label: 4. Nuestra Convicción y Cómo Colaboramos
+        type: object
+        fields:
+          - { name: frasePrincipal, label: Frase de convicción, type: string }
+          - name: pilares
+            label: Píldoras (Cómo colaboramos)
+            type: object
+            list: true
+            fields:
+              - { name: titulo, label: Título en píldora morada, type: string }
+              - { name: descripcion, label: Descripción, type: text }
+          - { name: fraseCierreHtml, label: Frase de cierre (usa <span> para azul), type: string }
+
+      - name: capitulos
+        label: 5. Capítulos Estudiantiles y Gobernanza
+        type: object
+        fields:
+          - { name: etiqueta, label: Etiqueta superior, type: string }
+          - { name: intro, label: Introducción de Capítulos, type: rich-text }
+          - name: roles
+            label: Tarjetas de Estructura (2, 3, 4, 1)
+            type: object
+            list: true
+            fields:
+              - { name: cantidad, label: Número, type: string }
+              - { name: cargo, label: Nombre del cargo, type: string }
+              - { name: descripcion, label: Descripción / Duración, type: string }
+          - { name: requisitos, label: Texto de caja punteada (Requisitos), type: text }
+
+      - name: modeloHibrido
+        label: 6. Modelo Híbrido y Formulario
+        type: object
+        fields:
+          - { name: titulo, label: Título de sección, type: string }
+          - { name: intro, label: Descripción del modelo híbrido, type: text }
+          - { name: formspreeUrl, label: URL de Formspree (dejar vacío hasta conectar), type: string }
+          - name: sectorPrivado
+            label: Tarjeta Sector Privado
+            type: object
+            fields:
+              - { name: etiqueta, label: Etiqueta, type: string }
+              - { name: titulo, label: Título, type: string }
+              - { name: descripcion, label: Descripción, type: text }
+              - { name: puntos, label: Viñetas, type: string, list: true }
+              - { name: textoBoton, label: Texto del botón, type: string }
+          - name: sectorPublico
+            label: Tarjeta Sector Público / Brigadas
+            type: object
+            fields:
+              - { name: etiqueta, label: Etiqueta, type: string }
+              - { name: titulo, label: Título, type: string }
+              - { name: descripcion, label: Descripción, type: text }
+              - { name: puntos, label: Viñetas, type: string, list: true }
+              - { name: textoBoton, label: Texto del botón, type: string }
+
+      - name: noticias
+        label: 7. Blog (Noticias e Intervenciones)
+        type: object
+        list: true
+        fields:
+          - { name: titulo, label: Título de la noticia o intervención, type: string }
+          - { name: fecha, label: Fecha, type: string }
+          - { name: tags, label: Etiquetas (ej. Noticias, Brigadas, Talleres), type: string, list: true }
+          - { name: imagen, label: Imagen de portada, type: image }
+          - { name: resumen, label: Resumen corto, type: text }
+          - { name: contenido, label: Contenido completo (Markdown), type: rich-text }
+
+      - name: contacto
+        label: 8. Pie de página y Redes
+        type: object
+        fields:
+          - { name: textoFooter, label: Texto principal del footer, type: string }
+          - { name: instagramHandle, label: Usuario Instagram (ej. @somosmusa.mx), type: string }
+          - { name: instagramUrl, label: Enlace completo a Instagram, type: string }
+          - { name: correo, label: Correo oficial, type: string }

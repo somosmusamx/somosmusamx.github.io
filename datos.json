@@ -1,0 +1,137 @@
+{
+  "portada": {
+    "nombre": "MUSA",
+    "lemaParte1": "EL ARTE NUESTRO LENGUAJE,",
+    "lemaParte2": "LA SALUD NUESTRO MENSAJE.",
+    "subtitulo": "“GRUPO JUVENIL DE PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”",
+    "bannerDerecho": "CONOCE A MUSA · ARTE Y SALUD EN COMUNIDAD",
+    "logo": "",
+    "fotoPortada": ""
+  },
+  "identidad": {
+    "quienesTitulo": "¿QUIÉNES SOMOS?",
+    "quienesTexto": "Somos un **grupo juvenil independiente** dedicado a la integración del arte y la salud. A través de la arteterapia, la ludoterapia y la risoterapia, buscamos **crear intervenciones que impacten positivamente** en el bienestar físico, mental y emocional de las personas, transformando los entornos de cuidado.",
+    "fotoQuienes": "",
+    "enfermeriaTitulo": "LIDERAZGO DESDE EL CUIDADO",
+    "enfermeriaSubtitulo": "EL NÚCLEO DE ENFERMERÍA",
+    "enfermeriaTexto1": "Aunque MUSA es un equipo multidisciplinario que se enriquece con diversas perspectivas, **su fundación, dirección y liderazgo están a cargo de estudiantes y profesionales de Enfermería.**",
+    "fotoEnfermeria": "",
+    "enfermeriaTexto2": "Esto garantiza que cada una de nuestras intervenciones creativas esté fundamentada en el **Proceso de Atención Enfermero (PAE)** y en los principios del cuidado holístico:",
+    "enfermeriaPuntos": [
+      "Entendemos el entorno clínico y comunitario,",
+      "respetamos los protocolos hospitalarios y de bioseguridad, y",
+      "priorizamos la seguridad y el confort de la persona en todo momento."
+    ]
+  },
+  "ejes": {
+    "intro": "Diseñamos y ejecutamos proyectos donde el arte se convierte en una herramienta terapéutica y educativa:",
+    "lista": [
+      {
+        "titulo": "INTERVENCIONES CREATIVAS",
+        "subtitulo": "Arteterapia pura",
+        "descripcion": "Fomentamos la expresión emocional, la introspección y la reducción del estrés mediante dinámicas creativas directas (como la campaña *“Yo Soy...”*).",
+        "imagen": ""
+      },
+      {
+        "titulo": "EDUCACIÓN PARA LA SALUD",
+        "subtitulo": "A través de la arteterapia",
+        "descripcion": "Liderado 100% por el área de Enfermería, este eje transforma la prevención y el autocuidado en experiencias didácticas, interactivas y memorables (como el taller *“Yo Sí Me Cuido”*).",
+        "imagen": ""
+      },
+      {
+        "titulo": "BRIGADAS DE ARTETERAPIA",
+        "subtitulo": "Fusión de nuestros 2 primeros ejes",
+        "descripcion": "Llevamos nuestro modelo de atención a hospitales, asilos y casas hogar mediante intervenciones breves de arte, música, ludoterapia y risoterapia (como *“Jardín MUSA”*).",
+        "imagen": ""
+      }
+    ]
+  },
+  "conviccion": {
+    "frasePrincipal": "CREEMOS QUE EL ARTE Y EL CUIDADO SON HERRAMIENTAS TRANSFORMADORAS.",
+    "pilares": [
+      {
+        "titulo": "ACOMPAÑAMIENTO EMPÁTICO",
+        "descripcion": "Aportamos soporte emocional y educativo adaptado a pacientes, residentes, estudiantes y su red de apoyo."
+      },
+      {
+        "titulo": "ENTORNOS POSITIVOS",
+        "descripcion": "Ayudamos a canalizar emociones y disminuir la ansiedad, creando espacios que favorecen la adaptación y la calidad de vida."
+      },
+      {
+        "titulo": "RIGOR Y ADAPTABILIDAD",
+        "descripcion": "Ejecutamos cada intervención con absoluto respeto a las normas, dinámicas y protocolos (operativos o de bioseguridad) de cada institución."
+      }
+    ],
+    "fraseCierreHtml": "SOMOS EL PUENTE ENTRE EL <span>SERVICIO</span> Y LA <span>CALIDEZ.</span>"
+  },
+  "capitulos": {
+    "etiqueta": "Gobernanza y Capítulos Estudiantiles",
+    "intro": "¿Te gustaría fundar un **Capítulo Estudiantil MUSA** en tu universidad? Cada capítulo es operado 100% por estudiantes con una planilla mínima inicial de **10 personas**, respaldada por un mentor académico (preferentemente coordinación de Enfermería). Escríbenos a **capitulos@somosmusa.com.mx**.",
+    "roles": [
+      {
+        "cantidad": "2",
+        "cargo": "Líder General",
+        "descripcion": "Nombramiento por tiempo indefinido."
+      },
+      {
+        "cantidad": "3",
+        "cargo": "Líder de Proyecto",
+        "descripcion": "Gestión de 1 año con reelección."
+      },
+      {
+        "cantidad": "4",
+        "cargo": "Sublíder",
+        "descripcion": "Nombramiento flexible y continuo."
+      },
+      {
+        "cantidad": "1",
+        "cargo": "Mentor Académico",
+        "descripcion": "Docente o coordinador de Enfermería."
+      }
+    ],
+    "requisitos": "Para cargos de liderazgo: estudiantes de Enfermería de 3er semestre en adelante, 1 año como miembro activo y sin sanciones. Planilla mínima de 10 integrantes con respaldo académico."
+  },
+  "modeloHibrido": {
+    "titulo": "LLEVA A MUSA A TU INSTITUCIÓN",
+    "intro": "Operamos bajo un modelo híbrido de impacto social: las intervenciones contratadas por el sector privado financian directamente nuestras brigadas comunitarias.",
+    "formspreeUrl": "",
+    "sectorPrivado": {
+      "etiqueta": "Sector Privado y Empresas",
+      "titulo": "INTERVENCIONES INSTITUCIONALES",
+      "descripcion": "Ideal para colegios privados, universidades, clínicas y empresas. Diseñamos talleres de autocuidado y arteterapia a la medida.",
+      "puntos": [
+        "Cotización formal según número de participantes y objetivos.",
+        "Materiales, planeación fundamentada en el PAE y facilitación incluidos.",
+        "Tu contratación financia directamente nuestras brigadas en poblaciones vulnerables."
+      ],
+      "textoBoton": "Solicitar Cotización"
+    },
+    "sectorPublico": {
+      "etiqueta": "Sector Público y Asistencia Social",
+      "titulo": "PROGRAMA DE BRIGADAS COMUNITARIAS",
+      "descripcion": "Dirigido a escuelas públicas, casas hogar, asilos y asociaciones civiles. Postula a tu comunidad para nuestro calendario de brigadas.",
+      "puntos": [
+        "Beca del 100%: cubierta por nuestro fondo de impacto y eventos de recaudación.",
+        "Cuota de recuperación: subsidio parcial o cobertura únicamente de materiales.",
+        "Alianza piloto: primera intervención subsidiada para proyectos de seguimiento."
+      ],
+      "textoBoton": "Postular mi Institución"
+    }
+  },
+  "noticias": [
+    {
+      "titulo": "Jardín MUSA: Brigada de Arteterapia en Casa Hogar Amigo Daniel",
+      "fecha": "Noviembre 2026",
+      "tags": ["MUSA", "Brigadas", "Arteterapia"],
+      "imagen": "",
+      "resumen": "Llevamos una jornada de expresión creativa, acompañamiento empático y promoción de la salud emocional para niñas, niños y adolescentes.",
+      "contenido": "En esta intervención fusionamos nuestros dos primeros ejes para crear un espacio seguro de expresión artística y contención emocional.\n\n### ¿Qué hicimos?\n- Dinámicas de arteterapia colaborativa.\n- Actividades lúdicas enfocadas en el reconocimiento emocional.\n- Cierre comunitario con la instalación colectiva **Jardín MUSA**."
+    }
+  ],
+  "contacto": {
+    "textoFooter": "MUSA · Grupo Juvenil de Promoción y Educación en Salud a través de la Arteterapia",
+    "instagramHandle": "@somosmusa.mx",
+    "instagramUrl": "https://instagram.com/somosmusa.mx",
+    "correo": "contacto@somosmusa.com.mx"
+  }
+}

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUSA | Promoción y Educación en Salud a través de la Arteterapia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --musa-deep-purple: #4a145c;
+      --musa-lilac: #c59cd9;
+      --musa-lilac-soft: #efe5f5;
+      --musa-blue: #7d93c8;
+      --musa-sky: #ebf3ff;
+      --musa-cream: #fcfbf5;
+      --text-dark: #1f1627;
+      --text-muted: #4b3f54;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--musa-cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .display-title {
+      font-family: 'Anton', Impact, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.05;
+    }
+
+    .topbar {
+      background: #ffffff;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      border-bottom: 2px solid var(--musa-lilac);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+    .brand-nav {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.45rem;
+      color: var(--musa-deep-purple);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--musa-deep-purple);
+    }
+    .nav-links a:hover { color: var(--musa-blue); }
+    .nav-cta {
+      background-color: var(--musa-deep-purple);
+      color: #ffffff !important;
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+    }
+
+    .musa-hero {
+      background-color: var(--musa-cream);
+      border-bottom: 4px solid var(--musa-lilac);
+    }
+    .musa-hero-grid {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: stretch;
+    }
+    @media (max-width: 780px) {
+      .musa-hero-grid { grid-template-columns: 1fr; }
+    }
+    .musa-hero-left {
+      padding: 3.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .musa-logo-box img {
+      max-width: 210px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .musa-wordmark {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(3.2rem, 7vw, 4.6rem);
+      color: var(--musa-deep-purple);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+    .musa-motto {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.35rem;
+      color: var(--musa-lilac);
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+    .musa-motto span { color: var(--musa-blue); }
+    .musa-official-sub {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.1rem;
+      color: var(--musa-deep-purple);
+      max-width: 440px;
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .musa-hero-right {
+      background-color: var(--musa-lilac);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .musa-hero-photo {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .musa-hero-photo-placeholder {
+      flex: 1;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      color: var(--musa-deep-purple);
+      font-weight: 700;
+    }
+    .musa-hero-banner-bottom {
+      background-color: var(--musa-lilac);
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+    }
+    .musa-hero-banner-bottom span {
+      display: block;
+      font-family: 'Anton', sans-serif;
+      font-size: 1.15rem;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+    }
+
+    .split-identity {
+      max-width: 1040px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.75rem;
+    }
+    @media (max-width: 780px) {
+      .split-identity { grid-template-columns: 1fr; }
+    }
+    .panel-lilac {
+      background-color: var(--musa-lilac);
+      color: var(--text-dark);
+      border-radius: 20px;
+      padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .panel-lilac h2 {
+      font-size: 2.2rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 1rem;
+    }
+    .panel-lilac p { font-size: 1rem; margin-bottom: 1.25rem; }
+    .framed-photo {
+      width: 100%;
+      border-radius: 12px;
+      border: 6px solid var(--musa-deep-purple);
+      object-fit: cover;
+      max-height: 240px;
+    }
+
+    .panel-cream {
+      background-color: #ffffff;
+      border: 2px solid var(--musa-blue);
+      border-radius: 20px;
+      padding: 2.25rem;
+    }
+    .panel-cream h2 {
+      font-size: 2.1rem;
+      color: var(--musa-blue);
+      margin-bottom: 0.25rem;
+    }
+    .panel-cream .kicker {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.15rem;
+      color: var(--musa-blue);
+      margin-bottom: 1rem;
+    }
+    .panel-cream ul {
+      margin-top: 0.85rem;
+      padding-left: 1.25rem;
+      font-weight: 600;
+    }
+    .panel-cream li { margin-bottom: 0.45rem; }
+
+    .axes-section {
+      max-width: 1040px;
+      margin: 3rem auto;
+      padding: 0 1.25rem;
+    }
+    .axes-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .axes-header h2 {
+      font-size: 2.5rem;
+      color: var(--musa-lilac);
+    }
+    .axes-header .sub {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.35rem;
+      color: var(--musa-lilac);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .dots-three span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+    .axes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+    .axis-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.75rem;
+      border-top: 6px solid var(--musa-deep-purple);
+      box-shadow: 0 6px 18px rgba(74, 20, 92, 0.06);
+    }
+    .axis-card.blue { border-top-color: var(--musa-blue); }
+    .axis-card.lilac { border-top-color: var(--musa-lilac); }
+    .axis-card h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.4rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.25rem;
+    }
+    .axis-card.blue h3 { color: var(--musa-blue); }
+    .axis-card.lilac h3 { color: #9c6ade; }
+    .axis-card .axis-sub {
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .axis-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+
+    .collab-section {
+      background-color: #ffffff;
+      border-top: 3px solid var(--musa-lilac);
+      border-bottom: 3px solid var(--musa-lilac);
+      padding: 3rem 1.25rem;
+      margin: 2.5rem 0;
+    }
+    .collab-container {
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .collab-container h2 {
+      font-size: 2.3rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.5rem;
+    }
+    .conviction {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.25rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 2rem;
+    }
+    .collab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .pill-header {
+      background-color: var(--musa-deep-purple);
+      color: #ffffff;
+      font-family: 'Anton', sans-serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+      padding: 0.65rem 1.25rem;
+      border-radius: 999px;
+      margin-bottom: 0.85rem;
+    }
+    .bridge-banner {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.65rem;
+      color: var(--musa-deep-purple);
+      margin-top: 1.5rem;
+    }
+    .bridge-banner span { color: var(--musa-blue); }
+
+    .gov-section {
+      background-color: var(--musa-sky);
+      padding: 4rem 1.25rem;
+      margin: 2.5rem 0;
+    }
+    .gov-container {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .gov-kicker {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text-dark);
+    }
+    .gov-title {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 800;
+      color: #111111;
+      margin-bottom: 0.75rem;
+      line-height: 1.1;
+    }
+    .gov-title span { color: var(--musa-lilac); }
+    .gov-intro {
+      max-width: 760px;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      font-size: 0.98rem;
+    }
+    .gov-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.25rem;
+    }
+    .gov-card {
+      background-color: var(--musa-blue);
+      color: var(--musa-deep-purple);
+      border-radius: 24px;
+      padding: 2.6rem 1.25rem 1.6rem;
+      text-align: center;
+      position: relative;
+      margin-top: 1.75rem;
+    }
+    .gov-num {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: var(--musa-blue);
+      color: var(--musa-deep-purple);
+      font-weight: 800;
+      font-size: 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -34px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .gov-card h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+    .gov-card p {
+      font-size: 0.9rem;
+      color: #241430;
+    }
+    .gov-requirements {
+      border: 2.5px dashed var(--musa-deep-purple);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.45);
+    }
+    .gov-requirements strong {
+      display: block;
+      color: #9c6ade;
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .hybrid-section {
+      max-width: 1040px;
+      margin: 3.5rem auto;
+      padding: 0 1.25rem;
+    }
+    .hybrid-header {
+      text-align: center;
+      max-width: 740px;
+      margin: 0 auto 2.25rem;
+    }
+    .hybrid-header h2 {
+      font-size: 2.3rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.5rem;
+    }
+    .hybrid-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 780px) {
+      .hybrid-grid { grid-template-columns: 1fr; }
+    }
+    .hybrid-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 2rem;
+      border: 2px solid var(--musa-lilac);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .hybrid-card.private { border-color: var(--musa-deep-purple); }
+    .hybrid-card h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.5rem;
+      color: var(--musa-deep-purple);
+      margin: 0.65rem 0;
+    }
+    .hybrid-card ul {
+      margin: 1rem 0 1.5rem 1.25rem;
+      font-size: 0.93rem;
+      color: var(--text-muted);
+    }
+    .hybrid-card li { margin-bottom: 0.45rem; }
+
+    .form-box {
+      background: #ffffff;
+      border: 2px solid var(--musa-lilac);
+      border-radius: 20px;
+      padding: 2.25rem;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 640px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.35rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 0.95rem;
+      border: 1.5px solid var(--musa-lilac);
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.94rem;
+      background: var(--musa-cream);
+    }
+
+    .musa-blog-wrap {
+      max-width: 920px;
+      margin: 3.5rem auto;
+      padding: 0 1.25rem 3rem;
+    }
+    .musa-blog-wrap h2 {
+      font-size: 2.2rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+    .musa-post-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      border: 2px solid var(--musa-lilac);
+    }
+    .musa-post-cover {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .musa-tag {
+      display: inline-block;
+      background: var(--musa-lilac-soft);
+      color: var(--musa-deep-purple);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin-right: 0.35rem;
+      text-transform: uppercase;
+    }
+    .musa-btn {
+      background-color: var(--musa-deep-purple);
+      color: #ffffff;
+      border: 2px solid var(--musa-deep-purple);
+      padding: 0.65rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .musa-btn.outline {
+      background-color: transparent;
+      color: var(--musa-deep-purple);
+    }
+    .musa-btn:hover { opacity: 0.92; }
+
+    #msp-body h1, #msp-body h2, #msp-body h3 { color: var(--musa-deep-purple); margin: 1.1rem 0 0.5rem; }
+    #msp-body p { margin-bottom: 0.9rem; }
+    #msp-body ul, #msp-body ol { margin: 0.5rem 0 1rem 1.4rem; }
+
+    footer {
+      background-color: var(--musa-deep-purple);
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--musa-lilac); font-weight: 700; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="#inicio" class="brand-nav">MUSA</a>
+    <nav class="nav-links">
+      <a href="#identidad">Quiénes Somos</a>
+      <a href="#ejes">3 Ejes</a>
+      <a href="#capitulos">Capítulos</a>
+      <a href="#musa-blog-section">Noticias</a>
+      <a href="#solicitar" class="nav-cta">Solicitar Intervención</a>
+    </nav>
+  </div>
+
+  <section class="musa-hero" id="inicio">
+    <div class="musa-hero-grid">
+      <div class="musa-hero-left">
+        <div class="musa-logo-box" id="musa-logo-container"></div>
+        <div class="musa-wordmark" id="hero-nombre">MUSA</div>
+        <p class="musa-motto" id="hero-lema">EL ARTE NUESTRO LENGUAJE,<br><span>LA SALUD NUESTRO MENSAJE.</span></p>
+        <p class="musa-official-sub" id="hero-subtitulo">“GRUPO JUVENIL DE PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”</p>
+        <div class="hero-btns">
+          <a href="#solicitar" class="musa-btn">Solicitar Intervención</a>
+          <a href="#capitulos" class="musa-btn outline">Abrir un Capítulo</a>
+        </div>
+      </div>
+      <div class="musa-hero-right">
+        <div id="musa-cover-container" style="flex:1; display:flex;">
+          <div class="musa-hero-photo-placeholder">Espacio para fotografía principal de MUSA (editable en Pages CMS)</div>
+        </div>
+        <div class="musa-hero-banner-bottom">
+          <span id="hero-banner">CONOCE A MUSA · ARTE Y SALUD EN COMUNIDAD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="split-identity" id="identidad">
+    <div class="panel-lilac">
+      <div>
+        <h2 class="display-title" id="quienes-titulo">¿QUIÉNES SOMOS?</h2>
+        <div id="quienes-texto"></div>
+      </div>
+      <div id="musa-quienes-img"></div>
+    </div>
+
+    <div class="panel-cream">
+      <h2 class="display-title" id="enfermeria-titulo">LIDERAZGO DESDE EL CUIDADO</h2>
+      <div class="kicker" id="enfermeria-subtitulo">EL NÚCLEO DE ENFERMERÍA</div>
+      <div id="enfermeria-texto-1"></div>
+      <div id="musa-enfermeria-img" style="margin: 1rem 0;"></div>
+      <div id="enfermeria-texto-2"></div>
+      <ul id="enfermeria-lista"></ul>
+    </div>
+  </section>
+
+  <section class="axes-section" id="ejes">
+    <div class="axes-header">
+      <h2 class="display-title">¿QUÉ HACEMOS?</h2>
+      <div class="sub">
+        NUESTROS 3 EJES
+        <div class="dots-three">
+          <span style="background:var(--musa-deep-purple);"></span>
+          <span style="background:var(--musa-blue);"></span>
+          <span style="background:var(--musa-lilac);"></span>
+        </div>
+      </div>
+      <p id="ejes-intro" style="max-width:620px; margin:0.5rem auto 0; color:var(--text-muted);"></p>
+    </div>
+
+    <div class="axes-grid" id="ejes-container"></div>
+  </section>
+
+  <section class="collab-section">
+    <div class="collab-container">
+      <h2 class="display-title">NUESTRA CONVICCIÓN</h2>
+      <p class="conviction" id="conviccion-frase"></p>
+
+      <h3 class="display-title" style="font-size:1.85rem; color:var(--musa-deep-purple); margin-bottom:1.5rem;">¿CÓMO COLABORAMOS?</h3>
+      <div class="collab-grid" id="pilares-container"></div>
+
+      <div class="bridge-banner" id="cierre-frase"></div>
+    </div>
+  </section>
+
+  <section class="gov-section" id="capitulos">
+    <div class="gov-container">
+      <div class="gov-kicker" id="gov-kicker">Gobernanza y Capítulos Estudiantiles</div>
+      <h2 class="gov-title" id="gov-titulo">Estructura de <span>Liderazgo</span>.</h2>
+      <p class="gov-intro" id="gov-intro"></p>
+
+      <div class="gov-grid" id="gov-cards-container"></div>
+
+      <div class="gov-requirements">
+        <strong>Requisitos del Capítulo y Liderazgo:</strong>
+        <p id="gov-requisitos"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hybrid-section" id="solicitar">
+    <div class="hybrid-header">
+      <h2 class="display-title" id="hibrido-titulo">LLEVA A MUSA A TU INSTITUCIÓN</h2>
+      <p id="hibrido-intro" style="color:var(--text-muted);"></p>
+    </div>
+
+    <div class="hybrid-grid" id="hibrido-cards-container"></div>
+
+    <div class="form-box" id="formulario-contacto">
+      <h3 class="display-title" style="font-size:1.75rem; color:var(--musa-deep-purple); margin-bottom:0.4rem;">SOLICITA UNA INTERVENCIÓN O CAPÍTULO</h3>
+      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1.5rem;">Completa tus datos y elige la modalidad que mejor se adapte a tu institución.</p>
+
+      <form id="musaForm" action="#" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana López" />
+          </div>
+          <div class="form-group">
+            <label for="institucion">Institución, escuela u organización</label>
+            <input type="text" id="institucion" name="institucion" required placeholder="Ej. Colegio / Casa Hogar / Universidad" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required placeholder="nombre@correo.com" />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 477 000 0000" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalidad">¿Cómo podemos colaborar?</label>
+          <select id="modalidad" name="modalidad" required>
+            <option value="" disabled selected>Selecciona una opción...</option>
+            <option value="cotizacion">Contamos con presupuesto institucional (Solicitar cotización formal)</option>
+            <option value="cuota">Podemos cubrir materiales o cuota de recuperación simbólica</option>
+            <option value="brigada">Somos institución pública / sin fines de lucro (Evaluación para beca del 100%)</option>
+            <option value="capitulo">Queremos abrir un Capítulo Estudiantil MUSA en nuestra universidad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Cuéntanos sobre tu comunidad o solicitud</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Número de participantes, edades, fechas tentativas y objetivo..."></textarea>
+        </div>
+
+        <button type="submit" class="musa-btn">Enviar Solicitud</button>
+        <p id="formFeedback" style="margin-top:0.85rem; font-weight:700; font-size:0.9rem; color:var(--musa-deep-purple);"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="musa-blog-wrap" id="musa-blog-section">
+    <h2 class="display-title">NOTICIAS E INTERVENCIONES MUSA</h2>
+    <div id="musa-posts-list"></div>
+
+    <div id="musa-single-post" class="musa-post-card" style="display:none;">
+      <button class="musa-btn" onclick="closeMusaPost()" style="margin-top:0; margin-bottom:1.25rem;">← Volver a noticias e intervenciones</button>
+      <div id="msp-tags" style="margin-bottom:0.5rem;"></div>
+      <div id="msp-date" style="font-size:0.85rem; font-weight:700; color:var(--musa-blue); margin-bottom:0.4rem;"></div>
+      <h3 id="msp-title" style="font-size:1.5rem; margin-bottom:1rem; color:var(--musa-deep-purple);"></h3>
+      <img id="msp-img" class="musa-post-cover" style="display:none; max-height:380px;" />
+      <div id="msp-body" style="line-height:1.8;"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p id="footer-texto"></p>
+  </footer>
+
+  <script>
+    let musaPosts = [];
+
+    function seleccionarModalidad(valor) {
+      const select = document.getElementById('modalidad');
+      if (select) select.value = valor;
+      document.getElementById('formulario-contacto').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    async function loadMusaSite() {
+      try {
+        const res = await fetch('datos.json?v=' + Date.now());
+        const data = await res.json();
+
+        if (data.portada) {
+          document.getElementById('hero-nombre').textContent = data.portada.nombre || 'MUSA';
+          document.getElementById('hero-lema').innerHTML = `${data.portada.lemaParte1}<br><span>${data.portada.lemaParte2}</span>`;
+          document.getElementById('hero-subtitulo').textContent = data.portada.subtitulo;
+          document.getElementById('hero-banner').textContent = data.portada.bannerDerecho;
+
+          if (data.portada.logo) {
+            document.getElementById('musa-logo-container').innerHTML = `<img src="${data.portada.logo}" alt="Logotipo MUSA">`;
+          }
+          if (data.portada.fotoPortada) {
+            document.getElementById('musa-cover-container').innerHTML = `<img src="${data.portada.fotoPortada}" class="musa-hero-photo" alt="Integrantes MUSA">`;
+          }
+        }
+
+        if (data.identidad) {
+          document.getElementById('quienes-titulo').textContent = data.identidad.quienesTitulo;
+          document.getElementById('quienes-texto').innerHTML = marked.parse(data.identidad.quienesTexto || '');
+          if (data.identidad.fotoQuienes) {
+            document.getElementById('musa-quienes-img').innerHTML = `<img src="${data.identidad.fotoQuienes}" class="framed-photo" alt="Actividad MUSA">`;
+          }
+
+          document.getElementById('enfermeria-titulo').textContent = data.identidad.enfermeriaTitulo;
+          document.getElementById('enfermeria-subtitulo').textContent = data.identidad.enfermeriaSubtitulo;
+          document.getElementById('enfermeria-texto-1').innerHTML = marked.parse(data.identidad.enfermeriaTexto1 || '');
+          if (data.identidad.fotoEnfermeria) {
+            document.getElementById('musa-enfermeria-img').innerHTML = `<img src="${data.identidad.fotoEnfermeria}" class="framed-photo" alt="Equipo Enfermería MUSA">`;
+          }
+          document.getElementById('enfermeria-texto-2').innerHTML = marked.parse(data.identidad.enfermeriaTexto2 || '');
+          document.getElementById('enfermeria-lista').innerHTML = (data.identidad.enfermeriaPuntos || [])
+            .map(item => `<li>${item}</li>`).join('');
+        }
+
+        if (data.ejes) {
+          document.getElementById('ejes-intro').textContent = data.ejes.intro;
+          const colors = ['', 'blue', 'lilac'];
+          document.getElementById('ejes-container').innerHTML = (data.ejes.lista || []).map((eje, idx) => `
+            <div class="axis-card ${colors[idx % 3]}">
+              <h3>${eje.titulo}</h3>
+              <div class="axis-sub">${eje.subtitulo}</div>
+              <div style="font-size:0.94rem; color:var(--text-muted);">${marked.parse(eje.descripcion || '')}</div>
+              ${eje.imagen ? `<img src="${eje.imagen}" alt="${eje.titulo}">` : ''}
+            </div>
+          `).join('');
+        }
+
+        if (data.conviccion) {
+          document.getElementById('conviccion-frase').textContent = data.conviccion.frasePrincipal;
+          document.getElementById('pilares-container').innerHTML = (data.conviccion.pilares || []).map(p => `
+            <div>
+              <div class="pill-header">${p.titulo}</div>
+              <p style="font-size:0.94rem; color:var(--text-muted);">${p.descripcion}</p>
+            </div>
+          `).join('');
+          document.getElementById('cierre-frase').innerHTML = data.conviccion.fraseCierreHtml;
+        }
+
+        if (data.capitulos) {
+          document.getElementById('gov-kicker').textContent = data.capitulos.etiqueta;
+          document.getElementById('gov-intro').innerHTML = marked.parse(data.capitulos.intro || '');
+          document.getElementById('gov-cards-container').innerHTML = (data.capitulos.roles || []).map(rol => `
+            <div class="gov-card">
+              <div class="gov-num">${rol.cantidad}</div>
+              <h3>${rol.cargo}</h3>
+              <p>${rol.descripcion}</p>
+            </div>
+          `).join('');
+          document.getElementById('gov-requisitos').textContent = data.capitulos.requisitos;
+        }
+
+        if (data.modeloHibrido) {
+          document.getElementById('hibrido-titulo').textContent = data.modeloHibrido.titulo;
+          document.getElementById('hibrido-intro').textContent = data.modeloHibrido.intro;
+
+          const cards = [
+            { ...data.modeloHibrido.sectorPrivado, css: 'private', btnClass: 'musa-btn', mod: 'cotizacion' },
+            { ...data.modeloHibrido.sectorPublico, css: 'public', btnClass: 'musa-btn outline', mod: 'brigada' }
+          ];
+
+          document.getElementById('hibrido-cards-container').innerHTML = cards.map(c => `
+            <div class="hybrid-card ${c.css}">
+              <div>
+                <span class="musa-tag">${c.etiqueta}</span>
+                <h3>${c.titulo}</h3>
+                <p style="font-size:0.95rem; color:var(--text-muted);">${c.descripcion}</p>
+                <ul>${(c.puntos || []).map(pt => `<li>${pt}</li>`).join('')}</ul>
+              </div>
+              <button type="button" class="${c.btnClass}" onclick="seleccionarModalidad('${c.mod}')">${c.textoBoton}</button>
+            </div>
+          `).join('');
+
+          if (data.modeloHibrido.formspreeUrl) {
+            document.getElementById('musaForm').setAttribute('action', data.modeloHibrido.formspreeUrl);
+          }
+        }
+
+        musaPosts = data.noticias || [];
+        const container = document.getElementById('musa-posts-list');
+        if (musaPosts.length === 0) {
+          container.innerHTML = `<div class="musa-post-card"><p style="color:var(--text-muted);">Próximamente se publicarán noticias y crónicas de nuestras intervenciones.</p></div>`;
+        } else {
+          container.innerHTML = musaPosts.map((p, i) => `
+            <article class="musa-post-card">
+              ${p.imagen ? `<img src="${p.imagen}" class="musa-post-cover" alt="${p.titulo}">` : ''}
+              <div style="margin-bottom:0.5rem;">${(p.tags || []).map(t => `<span class="musa-tag">${t}</span>`).join('')}</div>
+              <div style="font-size:0.82rem; font-weight:700; color:var(--musa-blue); margin-bottom:0.3rem;">${p.fecha}</div>
+              <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--musa-deep-purple);">${p.titulo}</h3>
+              <p style="color:var(--text-muted); font-size:0.95rem;">${p.resumen}</p>
+              <button class="musa-btn" style="margin-top:0.9rem;" onclick="openMusaPost(${i})">Leer publicación</button>
+            </article>
+          `).join('');
+        }
+
+        if (data.contacto) {
+          document.getElementById('footer-texto').innerHTML =
+            `${data.contacto.textoFooter} · Instagram: <a href="${data.contacto.instagramUrl}" target="_blank" rel="noopener">${data.contacto.instagramHandle}</a> · Correo: <a href="mailto:${data.contacto.correo}">${data.contacto.correo}</a>`;
+        }
+      } catch (err) {
+        console.error('Error cargando datos.json:', err);
+      }
+    }
+
+    function openMusaPost(i) {
+      const p = musaPosts[i];
+      document.getElementById('musa-posts-list').style.display = 'none';
+      document.getElementById('msp-tags').innerHTML = (p.tags || []).map(t => `<span class="musa-tag">${t}</span>`).join('');
+      document.getElementById('msp-date').textContent = p.fecha;
+      document.getElementById('msp-title').textContent = p.titulo;
+      const img = document.getElementById('msp-img');
+      if (p.imagen) { img.src = p.imagen; img.style.display = 'block'; } else { img.style.display = 'none'; }
+      document.getElementById('msp-body').innerHTML = marked.parse(p.contenido || '');
+      document.getElementById('musa-single-post').style.display = 'block';
+      document.getElementById('musa-blog-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function closeMusaPost() {
+      document.getElementById('musa-single-post').style.display = 'none';
+      document.getElementById('musa-posts-list').style.display = 'block';
+    }
+
+    document.getElementById('musaForm').addEventListener('submit', function(e) {
+      if (this.getAttribute('action') === '#') {
+        e.preventDefault();
+        document.getElementById('formFeedback').textContent = 'Modo vista previa: agrega tu enlace de Formspree en Pages CMS para recibir solicitudes en tu correo.';
+        this.reset();
+      }
+    });
+
+    loadMusaSite();
+  </script>
+</body>
+</html>
