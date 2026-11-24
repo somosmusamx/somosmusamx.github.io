@@ -1,0 +1,260 @@
+media:
+  input: img
+  output: img
+content:
+  - name: datos_musa
+    label: Contenido de MUSA
+    path: datos.json
+    format: json
+    fields:
+      - name: portada
+        label: Portada
+        type: object
+        fields:
+          - name: nombre
+            label: Nombre
+            type: string
+          - name: lemaParte1
+            label: Lema (parte 1)
+            type: string
+          - name: lemaParte2
+            label: Lema (parte 2)
+            type: string
+          - name: subtitulo
+            label: Subtítulo oficial
+            type: text
+          - name: bannerDerecho
+            label: Banner lateral derecho
+            type: string
+          - name: logo
+            label: Logotipo
+            type: image
+          - name: fotoPortada
+            label: Fotografía de portada
+            type: image
+      - name: identidad
+        label: Quiénes Somos y Enfermería
+        type: object
+        fields:
+          - name: quienesTitulo
+            label: Título ¿Quiénes somos?
+            type: string
+          - name: quienesTexto
+            label: Texto ¿Quiénes somos? (Markdown)
+            type: text
+          - name: fotoQuienes
+            label: Foto ¿Quiénes somos?
+            type: image
+          - name: enfermeriaTitulo
+            label: Título Liderazgo desde el Cuidado
+            type: string
+          - name: enfermeriaSubtitulo
+            label: Subtítulo del núcleo
+            type: string
+          - name: enfermeriaTexto1
+            label: Párrafo 1 (Markdown)
+            type: text
+          - name: fotoEnfermeria
+            label: Foto Enfermería
+            type: image
+          - name: enfermeriaTexto2
+            label: Párrafo 2 (Markdown)
+            type: text
+          - name: enfermeriaPuntos
+            label: Puntos clave
+            type: string
+            list: true
+      - name: ejes
+        label: Nuestros 3 Ejes
+        type: object
+        fields:
+          - name: intro
+            label: Introducción
+            type: text
+          - name: lista
+            label: Ejes
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: descripcion
+                label: Descripción (Markdown)
+                type: text
+              - name: imagen
+                label: Imagen del eje
+                type: image
+      - name: conviccion
+        label: Nuestra Convicción
+        type: object
+        fields:
+          - name: frasePrincipal
+            label: Frase principal
+            type: text
+          - name: pilares
+            label: Pilares de colaboración
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+          - name: fraseCierreHtml
+            label: Frase de cierre (HTML)
+            type: text
+      - name: capitulos
+        label: Capítulos Estudiantiles (Estructura y Formulario)
+        type: object
+        fields:
+          - name: etiqueta
+            label: Etiqueta superior
+            type: string
+          - name: intro
+            label: Introducción (Markdown)
+            type: text
+          - name: formspreeUrl
+            label: URL de formulario de capítulos
+            type: string
+          - name: roles
+            label: Roles del capítulo
+            type: object
+            list: true
+            fields:
+              - name: cantidad
+                label: Cantidad
+                type: string
+              - name: cargo
+                label: Cargo
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+          - name: requisitos
+            label: Requisitos
+            type: text
+      - name: capitulosCreados
+        label: Capítulos Creados (Carrusel y Micrositios)
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            label: Nombre del capítulo
+            type: string
+          - name: subdominio
+            label: Subdominio (ej. lasallebjx.somosmusa.com.mx)
+            type: string
+          - name: url
+            label: Enlace completo del micrositio
+            type: string
+          - name: ubicacion
+            label: Ubicación
+            type: string
+          - name: estado
+            label: Estado
+            type: string
+          - name: resumen
+            label: Resumen
+            type: text
+          - name: imagen
+            label: Imagen del capítulo
+            type: image
+      - name: modeloHibrido
+        label: Colaboraciones y Modelo Híbrido
+        type: object
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+          - name: intro
+            label: Introducción
+            type: text
+          - name: formspreeUrl
+            label: URL de formulario de colaboraciones
+            type: string
+          - name: sectorPrivado
+            label: Columna 1 (Intervenciones / Servicios)
+            type: object
+            fields:
+              - name: etiqueta
+                label: Etiqueta
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+              - name: puntos
+                label: Puntos
+                type: string
+                list: true
+              - name: textoBoton
+                label: Texto del botón
+                type: string
+          - name: sectorPublico
+            label: Columna 2 (Brigadas Comunitarias)
+            type: object
+            fields:
+              - name: etiqueta
+                label: Etiqueta
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+              - name: puntos
+                label: Puntos
+                type: string
+                list: true
+              - name: textoBoton
+                label: Texto del botón
+                type: string
+      - name: noticias
+        label: Entradas del Blog (usa tags como post, destacado, capitulos)
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+          - name: fecha
+            label: Fecha
+            type: string
+          - name: tags
+            label: Etiquetas (tags)
+            type: string
+            list: true
+          - name: imagen
+            label: Imagen de portada
+            type: image
+          - name: resumen
+            label: Resumen
+            type: text
+          - name: contenido
+            label: Contenido (Markdown)
+            type: text
+      - name: contacto
+        label: Pie de página y Contacto
+        type: object
+        fields:
+          - name: textoFooter
+            label: Texto del pie de página
+            type: string
+          - name: instagramUrl
+            label: Enlace de Instagram
+            type: string
+          - name: instagramHandle
+            label: Usuario de Instagram
+            type: string
+          - name: correo
+            label: Correo de contacto
+            type: string
