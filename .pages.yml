@@ -1,9 +1,10 @@
 media:
   input: img
-  output: img
+  output: /img
 content:
   - name: datos_musa
     label: Contenido de MUSA
+    type: file
     path: datos.json
     format: json
     fields:
