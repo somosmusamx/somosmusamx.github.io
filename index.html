@@ -53,12 +53,10 @@
 
     .topbar {
       background: #ffffff;
-      padding: 0.85rem 1.5rem;
+      padding: 0.75rem 1.25rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 0.75rem;
       border-bottom: 2px solid var(--musa-lilac);
       position: sticky;
       top: 0;
@@ -77,11 +75,30 @@
       letter-spacing: 0.04em;
       cursor: pointer;
     }
-    .nav-links {
+    .nav-compact {
       display: flex;
       align-items: center;
-      gap: 0.85rem;
-      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 1rem;
+      margin-top: 0.45rem;
+      background: #ffffff;
+      border: 2px solid var(--musa-lilac);
+      border-radius: 16px;
+      padding: 0.75rem;
+      box-shadow: 0 12px 28px rgba(74, 20, 92, 0.14);
+      flex-direction: column;
+      gap: 0.4rem;
+      min-width: 235px;
+      z-index: 50;
+    }
+    .nav-dropdown.is-open {
+      display: flex;
+      animation: fadeView 0.16s ease;
     }
     .nav-btn {
       background: transparent;
@@ -91,9 +108,14 @@
       font-size: 0.85rem;
       color: var(--musa-deep-purple);
       cursor: pointer;
-      padding: 0.4rem 0.75rem;
+      padding: 0.45rem 0.85rem;
       border-radius: 999px;
       transition: background 0.15s ease, color 0.15s ease;
+    }
+    .nav-dropdown .nav-btn {
+      width: 100%;
+      text-align: left;
+      padding: 0.55rem 0.9rem;
     }
     .nav-btn:hover,
     .nav-btn.is-current {
@@ -103,11 +125,17 @@
     .nav-cta {
       background-color: var(--musa-deep-purple);
       color: #ffffff !important;
-      padding: 0.48rem 1rem;
+      padding: 0.45rem 1rem;
       border-radius: 999px;
     }
+    .nav-dropdown .nav-cta {
+      text-align: center;
+      margin-top: 0.25rem;
+    }
+    .nav-cta:hover,
     .nav-cta.is-current {
       background-color: #2f0b3b;
+      color: #ffffff !important;
     }
 
     .musa-hero {
@@ -133,17 +161,10 @@
       text-align: center;
     }
     .musa-logo-box img {
-      max-width: 210px;
+      max-width: 280px;
+      width: 100%;
       height: auto;
-      margin-bottom: 1rem;
-    }
-    .musa-wordmark {
-      font-family: 'Anton', sans-serif;
-      font-size: clamp(3.2rem, 7vw, 4.6rem);
-      color: var(--musa-deep-purple);
-      letter-spacing: 0.04em;
-      line-height: 1;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
     }
     .musa-motto {
       font-family: 'Anton', sans-serif;
@@ -731,11 +752,14 @@
 
   <header class="topbar">
     <a class="brand-nav" data-view="inicio" onclick="mostrarVista('inicio')">MUSA</a>
-    <nav class="nav-links">
+    <div class="nav-compact">
+      <button type="button" class="nav-btn" data-view="blog" onclick="mostrarVista('blog')">Blog</button>
+      <button type="button" class="nav-btn nav-cta" id="menu-toggle-btn" onclick="toggleMenu(event)" aria-expanded="false" aria-controls="menu-desplegable">Menú ▾</button>
+    </div>
+    <nav class="nav-dropdown" id="menu-desplegable">
       <button type="button" class="nav-btn is-current" data-view="inicio" onclick="mostrarVista('inicio')">Inicio</button>
       <button type="button" class="nav-btn" data-view="colaboraciones" onclick="mostrarVista('colaboraciones')">Colaboraciones</button>
       <button type="button" class="nav-btn" data-view="capitulos" onclick="mostrarVista('capitulos')">Crea un Capítulo Estudiantil</button>
-      <button type="button" class="nav-btn" data-view="blog" onclick="mostrarVista('blog')">Blog</button>
       <button type="button" class="nav-btn nav-cta" data-view="colaboraciones" onclick="mostrarVista('colaboraciones')">Solicitar Intervención</button>
     </nav>
   </header>
@@ -746,7 +770,6 @@
       <div class="musa-hero-grid">
         <div class="musa-hero-left">
           <div class="musa-logo-box" id="musa-logo-container"></div>
-          <div class="musa-wordmark" id="hero-nombre">MUSA</div>
           <p class="musa-motto" id="hero-lema">EL ARTE NUESTRO LENGUAJE,<br><span>LA SALUD NUESTRO MENSAJE.</span></p>
           <p class="musa-official-sub" id="hero-subtitulo">“GRUPO ESTUDIANTIL PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”</p>
           <div class="hero-btns">
@@ -1001,7 +1024,31 @@
     let tagActivo = 'todos';
 
     const menuSuperior = document.querySelector('.topbar');
+    const menuDesplegable = document.getElementById('menu-desplegable');
+    const menuToggleBtn = document.getElementById('menu-toggle-btn');
     let ultimoScroll = window.scrollY;
+
+    function toggleMenu(event) {
+      if (event) event.stopPropagation();
+      const abierto = menuDesplegable.classList.toggle('is-open');
+      menuToggleBtn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+      menuToggleBtn.textContent = abierto ? 'Menú ▴' : 'Menú ▾';
+    }
+
+    function cerrarMenu() {
+      if (!menuDesplegable) return;
+      menuDesplegable.classList.remove('is-open');
+      if (menuToggleBtn) {
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+        menuToggleBtn.textContent = 'Menú ▾';
+      }
+    }
+
+    document.addEventListener('click', (e) => {
+      if (menuSuperior && !menuSuperior.contains(e.target)) {
+        cerrarMenu();
+      }
+    });
 
     window.addEventListener('scroll', () => {
       if (!menuSuperior) return;
@@ -1009,6 +1056,7 @@
 
       if (scrollActual > ultimoScroll && scrollActual > 80) {
         menuSuperior.classList.add('menu-oculto');
+        cerrarMenu();
       } else if (scrollActual < ultimoScroll) {
         menuSuperior.classList.remove('menu-oculto');
       }
@@ -1025,7 +1073,7 @@
         objetivo.classList.add('is-active');
       }
 
-      document.querySelectorAll('.nav-btn').forEach(btn => {
+      document.querySelectorAll('.nav-btn[data-view]').forEach(btn => {
         btn.classList.toggle('is-current', btn.getAttribute('data-view') === nombreVista);
       });
 
@@ -1033,6 +1081,7 @@
         closeMusaPost();
       }
 
+      cerrarMenu();
       if (menuSuperior) {
         menuSuperior.classList.remove('menu-oculto');
       }
@@ -1244,7 +1293,6 @@
         const data = await res.json();
 
         if (data.portada) {
-          document.getElementById('hero-nombre').textContent = data.portada.nombre || 'MUSA';
           document.getElementById('hero-lema').innerHTML = `${data.portada.lemaParte1 || ''}<br><span>${data.portada.lemaParte2 || ''}</span>`;
           document.getElementById('hero-subtitulo').textContent = data.portada.subtitulo || '';
           document.getElementById('hero-banner').textContent = data.portada.bannerDerecho || '';
