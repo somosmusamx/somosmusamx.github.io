@@ -2,7 +2,7 @@
   "portada": {
     "lemaParte1": "EL ARTE NUESTRO LENGUAJE,",
     "lemaParte2": "LA SALUD NUESTRO MENSAJE.",
-    "subtitulo": "“COLECTIVO JUVENIL PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”",
+    "subtitulo": "“RED NACIONAL DE ENFERMERÍA PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”",
     "bannerDerecho": "CONOCE A MUSA · ARTE Y SALUD EN COMUNIDAD",
     "logo": "/img/LOGO_2026 (1).png",
     "fotoPortada": "/img/Portada_musa.webp"
@@ -42,6 +42,109 @@
         "subtitulo": "Impacto comunitario",
         "descripcion": "Impulsamos equipos locales y brigadas educativas en escuelas, casas hogar y espacios comunitarios.",
         "imagen": "/img/3.webp"
+      }
+    ]
+  },
+  "redEnfermeria": {
+    "titulo": "RED DE ENFERMERÍA",
+    "intro": "En MUSA no solo hacemos arte: fundamentamos cada intervención en evidencia y práctica de enfermería. Nuestro trabajo une la actualización profesional continua con metodologías creativas para llevar educación en salud a cualquier entorno.",
+    "pilaresIntro": "Nuestro modelo de trabajo funciona como un ciclo continuo de formación, traducción creativa e impacto comunitario.",
+    "pilares": [
+      {
+        "titulo": "ACTUALIZACIÓN Y CAPACITACIÓN",
+        "subtitulo": "Formación continua en salud",
+        "descripcion": "Nos formamos y actualizamos constantemente en temas prioritarios de salud física, mental y comunitaria, fortaleciendo las competencias clínicas y educativas de nuestra red.",
+        "imagen": ""
+      },
+      {
+        "titulo": "TRADUCCIÓN CREATIVA",
+        "subtitulo": "Arteterapia como intervención",
+        "descripcion": "Convertimos el conocimiento técnico y científico de la salud en dinámicas artísticas estructuradas para que cualquier persona pueda comprenderlo y aplicarlo en su vida diaria.",
+        "imagen": ""
+      },
+      {
+        "titulo": "VINCULACIÓN COMUNITARIA",
+        "subtitulo": "Educación en campo",
+        "descripcion": "Llevamos estas intervenciones a escuelas, instituciones, empresas y comunidades a través de talleres, brigadas y capítulos locales.",
+        "imagen": ""
+      }
+    ],
+    "capacitacionesIntro": "Espacio dedicado a las capacitaciones, talleres y jornadas de actualización que hemos realizado o tenemos programadas.",
+    "capacitaciones": [
+      {
+        "titulo": "PRIMEROS AUXILIOS PSICOLÓGICOS",
+        "fecha": "Próximamente",
+        "estado": "Capacitación",
+        "descripcion": "Herramientas prácticas de contención emocional y acompañamiento inicial desde el enfoque de enfermería.",
+        "imagen": ""
+      },
+      {
+        "titulo": "ARTETERAPIA EN SALUD COMUNITARIA",
+        "fecha": "2026",
+        "estado": "Realizada",
+        "descripcion": "Diseño de intervenciones artísticas con objetivos claros de promoción y educación para la salud.",
+        "imagen": ""
+      },
+      {
+        "titulo": "EDUCACIÓN PARA LA SALUD Y PREVENCIÓN",
+        "fecha": "2026",
+        "estado": "Continua",
+        "descripcion": "Actualización en estrategias participativas para abordar temas de autocuidado en distintas etapas de la vida.",
+        "imagen": ""
+      }
+    ]
+  },
+  "serParte": {
+    "titulo": "SÉ PARTE DE NUESTRA RED DE ENFERMERÍA",
+    "intro": "Únete a una comunidad nacional que actualiza sus conocimientos en salud y los transforma en intervenciones creativas con impacto social.",
+    "beneficiosTitulo": "¿QUÉ HACEMOS Y QUIÉNES PUEDEN INTEGRARSE?",
+    "descripcion": "En **MUSA** realizamos capacitaciones constantes en temas de salud, participamos en congresos y eventos académicos, y desarrollamos proyectos de promoción de la salud mediante el arte. Para integrarte a nuestra red es necesario ser **Licenciado(a) en Enfermería** o **Estudiante de Enfermería**.",
+    "puntos": [
+      "Acceso a capacitaciones y actualización continua en temas de salud",
+      "Participación en congresos, ponencias y proyectos de divulgación",
+      "Requisito indispensable: ser Licenciado(a) en Enfermería o Estudiante de Enfermería"
+    ],
+    "opcionesEstudiantes": [
+      {
+        "etiqueta": "Opción 1 · Estudiantes",
+        "titulo": "MUSA ALUMNI",
+        "descripcion": "Ideal si eres estudiante de Enfermería y deseas integrarte de manera individual a la red nacional.",
+        "puntos": [
+          "Participación directa en capacitaciones y congresos",
+          "Conexión con profesionales y estudiantes de todo el país",
+          "Acompañamiento para desarrollar tus propias iniciativas"
+        ],
+        "textoBoton": "Solicitar ingreso a MUSA ALUMNI",
+        "accion": "formulario"
+      },
+      {
+        "etiqueta": "Opción 2 · Estudiantes",
+        "titulo": "CREA TU CAPÍTULO ESTUDIANTIL",
+        "descripcion": "Lleva una extensión oficial de MUSA a tu universidad y forma parte activa de MUSA Nacional.",
+        "puntos": [
+          "Estructura propia en tu campus con respaldo nacional",
+          "Liderazgo desde Enfermería con apertura a proyectos multidisciplinarios",
+          "Micrositio propio y acompañamiento para tus brigadas"
+        ],
+        "textoBoton": "Ver cómo crear un Capítulo",
+        "accion": "capitulos"
+      }
+    ],
+    "formspreeUrl": "https://formsubmit.co/contacto@somosmusa.com.mx",
+    "correoMasInfo": "enfermeria@somosmusa.com.mx"
+  },
+  "proyectos": {
+    "titulo": "NUESTROS PROYECTOS",
+    "intro": "Conoce las intervenciones, instalaciones artísticas y programas de educación para la salud que hemos diseñado y llevado a distintas comunidades.",
+    "ctaTitulo": "¿TIENES UNA ORGANIZACIÓN Y TE INTERESA LLEVAR ALGUNO DE NUESTROS PROYECTOS?",
+    "ctaTexto": "Llevamos nuestras intervenciones de arteterapia y promoción de la salud a escuelas, casas hogar, empresas e instituciones.",
+    "lista": [
+      {
+        "titulo": "Jardín MUSA",
+        "subtitulo": "Instalación interactiva de arteterapia y bienestar emocional",
+        "tags": ["Arteterapia", "Comunidad", "Salud Emocional"],
+        "imagen": "",
+        "descripcion": "**Jardín MUSA** es una experiencia participativa donde niñas, niños, jóvenes y adultos crean flores y elementos simbólicos mientras exploran herramientas de expresión emocional y autocuidado."
       }
     ]
   },
