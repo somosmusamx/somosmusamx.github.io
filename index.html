@@ -63,6 +63,11 @@
       position: sticky;
       top: 0;
       z-index: 40;
+      transition: transform 0.3s ease-in-out;
+      will-change: transform;
+    }
+    .topbar.menu-oculto {
+      transform: translateY(-100%);
     }
     .brand-nav {
       font-family: 'Anton', sans-serif;
@@ -528,7 +533,6 @@
       margin-bottom: 0.35rem;
     }
 
-    /* Carrusel de capítulos creados dentro de la vista Capítulos */
     .chapters-carousel-box {
       background: #ffffff;
       border: 2px solid var(--musa-deep-purple);
@@ -901,7 +905,6 @@
           <p id="gov-requisitos"></p>
         </div>
 
-        <!-- Carrusel de capítulos creados y sus micrositios -->
         <div class="chapters-carousel-box" aria-label="Capítulos creados">
           <div class="featured-top">
             <h3 class="display-title" style="font-size:1.75rem; color:var(--musa-deep-purple);">CAPÍTULOS CREADOS</h3>
@@ -997,6 +1000,22 @@
     let intervaloCarrusel = null;
     let tagActivo = 'todos';
 
+    const menuSuperior = document.querySelector('.topbar');
+    let ultimoScroll = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      if (!menuSuperior) return;
+      const scrollActual = window.scrollY;
+
+      if (scrollActual > ultimoScroll && scrollActual > 80) {
+        menuSuperior.classList.add('menu-oculto');
+      } else if (scrollActual < ultimoScroll) {
+        menuSuperior.classList.remove('menu-oculto');
+      }
+
+      ultimoScroll = scrollActual <= 0 ? 0 : scrollActual;
+    }, { passive: true });
+
     function mostrarVista(nombreVista) {
       document.querySelectorAll('.view-section').forEach(sec => {
         sec.classList.remove('is-active');
@@ -1012,6 +1031,10 @@
 
       if (nombreVista === 'blog') {
         closeMusaPost();
+      }
+
+      if (menuSuperior) {
+        menuSuperior.classList.remove('menu-oculto');
       }
 
       window.scrollTo({ top: 0, behavior: 'auto' });
