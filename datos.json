@@ -53,20 +53,17 @@
       {
         "titulo": "ACTUALIZACIÓN Y CAPACITACIÓN",
         "subtitulo": "Formación continua en salud",
-        "descripcion": "Nos formamos y actualizamos constantemente en temas prioritarios de salud física, mental y comunitaria, fortaleciendo las competencias clínicas y educativas de nuestra red.",
-        "imagen": ""
+        "descripcion": "Nos formamos y actualizamos constantemente en temas prioritarios de salud física, mental y comunitaria, fortaleciendo las competencias clínicas y educativas de nuestra red."
       },
       {
         "titulo": "TRADUCCIÓN CREATIVA",
         "subtitulo": "Arteterapia como intervención",
-        "descripcion": "Convertimos el conocimiento técnico y científico de la salud en dinámicas artísticas estructuradas para que cualquier persona pueda comprenderlo y aplicarlo en su vida diaria.",
-        "imagen": ""
+        "descripcion": "Convertimos el conocimiento técnico y científico de la salud en dinámicas artísticas estructuradas para que cualquier persona pueda comprenderlo y aplicarlo en su vida diaria."
       },
       {
         "titulo": "VINCULACIÓN COMUNITARIA",
         "subtitulo": "Educación en campo",
-        "descripcion": "Llevamos estas intervenciones a escuelas, instituciones, empresas y comunidades a través de talleres, brigadas y capítulos locales.",
-        "imagen": ""
+        "descripcion": "Llevamos estas intervenciones a escuelas, instituciones, empresas y comunidades a través de talleres, brigadas y capítulos locales."
       }
     ],
     "capacitacionesIntro": "Espacio dedicado a las capacitaciones, talleres y jornadas de actualización que hemos realizado o tenemos programadas.",
@@ -75,22 +72,19 @@
         "titulo": "PRIMEROS AUXILIOS PSICOLÓGICOS",
         "fecha": "Próximamente",
         "estado": "Capacitación",
-        "descripcion": "Herramientas prácticas de contención emocional y acompañamiento inicial desde el enfoque de enfermería.",
-        "imagen": ""
+        "descripcion": "Herramientas prácticas de contención emocional y acompañamiento inicial desde el enfoque de enfermería."
       },
       {
         "titulo": "ARTETERAPIA EN SALUD COMUNITARIA",
         "fecha": "2026",
         "estado": "Realizada",
-        "descripcion": "Diseño de intervenciones artísticas con objetivos claros de promoción y educación para la salud.",
-        "imagen": ""
+        "descripcion": "Diseño de intervenciones artísticas con objetivos claros de promoción y educación para la salud."
       },
       {
         "titulo": "EDUCACIÓN PARA LA SALUD Y PREVENCIÓN",
         "fecha": "2026",
         "estado": "Continua",
-        "descripcion": "Actualización en estrategias participativas para abordar temas de autocuidado en distintas etapas de la vida.",
-        "imagen": ""
+        "descripcion": "Actualización en estrategias participativas para abordar temas de autocuidado en distintas etapas de la vida."
       }
     ]
   },
@@ -106,7 +100,7 @@
     ],
     "opcionesEstudiantes": [
       {
-        "etiqueta": "Opción 1 · Estudiantes",
+        "etiqueta": "Estudiantes - Opción 1",
         "titulo": "MUSA ALUMNI",
         "descripcion": "Ideal si eres estudiante de Enfermería y deseas integrarte de manera individual a la red nacional.",
         "puntos": [
@@ -118,7 +112,7 @@
         "accion": "formulario"
       },
       {
-        "etiqueta": "Opción 2 · Estudiantes",
+        "etiqueta": "Estudiantes - Opción 2",
         "titulo": "CREA TU CAPÍTULO ESTUDIANTIL",
         "descripcion": "Lleva una extensión oficial de MUSA a tu universidad y forma parte activa de MUSA Nacional.",
         "puntos": [
@@ -128,6 +122,23 @@
         ],
         "textoBoton": "Ver cómo crear un Capítulo",
         "accion": "capitulos"
+      },
+      {
+        "etiqueta": "No Estudiantes - Opción 1",
+        "titulo": "Miembros MUSA",
+        "descripcion": "Se parte de nuestra red de enfermaría, comparte conocimientos y participa activamente en nuestras actividades",
+        "textoBoton": "Ser Miembro",
+        "accion": "formulario"
+      },
+      {
+        "etiqueta": "No Estudiantes - Opción 2",
+        "titulo": "Líderes MUSA",
+        "descripcion": "Se líder de tu propio equipo MUSA, crea eventos y comparte tus conocimientos.",
+        "puntos": [
+          "Lídera tu propio equipo MUSA."
+        ],
+        "textoBoton": "Ser Líder MUSA",
+        "accion": "formulario"
       }
     ],
     "formspreeUrl": "https://formsubmit.co/contacto@somosmusa.com.mx",
@@ -142,8 +153,11 @@
       {
         "titulo": "Jardín MUSA",
         "subtitulo": "Instalación interactiva de arteterapia y bienestar emocional",
-        "tags": ["Arteterapia", "Comunidad", "Salud Emocional"],
-        "imagen": "",
+        "tags": [
+          "Arteterapia",
+          "Comunidad",
+          "Salud Emocional"
+        ],
         "descripcion": "**Jardín MUSA** es una experiencia participativa donde niñas, niños, jóvenes y adultos crean flores y elementos simbólicos mientras exploran herramientas de expresión emocional y autocuidado."
       }
     ]
