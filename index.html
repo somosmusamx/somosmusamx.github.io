@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MUSA | Promoción y Educación en Salud a través de la Arteterapia</title>
+  <title>MUSA | Red Nacional de Enfermería y Arteterapia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -93,7 +93,7 @@
       box-shadow: 0 12px 28px rgba(74, 20, 92, 0.14);
       flex-direction: column;
       gap: 0.4rem;
-      min-width: 235px;
+      min-width: 245px;
       z-index: 50;
     }
     .nav-dropdown.is-open {
@@ -323,6 +323,9 @@
       padding: 1.75rem;
       border-top: 6px solid var(--musa-deep-purple);
       box-shadow: 0 6px 18px rgba(74, 20, 92, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .axis-card.blue { border-top-color: var(--musa-blue); }
     .axis-card.lilac { border-top-color: var(--musa-lilac); }
@@ -425,6 +428,73 @@
     .carousel-dot.is-active {
       background: var(--musa-deep-purple);
       transform: scale(1.2);
+    }
+
+    /* Encabezados y bloques de nuevas vistas */
+    .section-banner-header {
+      background: linear-gradient(135deg, var(--musa-lilac-soft) 0%, var(--musa-sky) 100%);
+      border-bottom: 3px solid var(--musa-lilac);
+      padding: 3rem 1.25rem;
+      text-align: center;
+    }
+    .section-banner-header h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3rem);
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.6rem;
+    }
+    .section-banner-header p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .cta-banner-projects {
+      background: var(--musa-deep-purple);
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2.25rem;
+      box-shadow: 0 8px 24px rgba(74, 20, 92, 0.14);
+    }
+    .cta-banner-projects h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.65rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.6rem;
+    }
+    .cta-banner-projects p {
+      color: var(--musa-lilac-soft);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .musa-btn-light {
+      background-color: #ffffff;
+      color: var(--musa-deep-purple);
+      border: 2px solid #ffffff;
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .musa-btn-light:hover {
+      background-color: var(--musa-lilac-soft);
+    }
+    .info-callout {
+      background: var(--musa-lilac-soft);
+      border-left: 5px solid var(--musa-deep-purple);
+      border-radius: 12px;
+      padding: 1.15rem 1.35rem;
+      margin-top: 1.25rem;
+      font-size: 0.93rem;
+      color: var(--text-dark);
+    }
+    .info-callout a {
+      color: var(--musa-deep-purple);
+      font-weight: 800;
     }
 
     .collab-section {
@@ -714,6 +784,7 @@
       padding: 0.25rem 0.7rem;
       border-radius: 999px;
       margin-right: 0.35rem;
+      margin-bottom: 0.25rem;
       text-transform: uppercase;
     }
     .musa-btn {
@@ -758,6 +829,9 @@
     </div>
     <nav class="nav-dropdown" id="menu-desplegable">
       <button type="button" class="nav-btn is-current" data-view="inicio" onclick="mostrarVista('inicio')">Inicio</button>
+      <button type="button" class="nav-btn" data-view="red-enfermeria" onclick="mostrarVista('red-enfermeria')">Red de Enfermería</button>
+      <button type="button" class="nav-btn" data-view="ser-parte" onclick="mostrarVista('ser-parte')">Ser Parte de MUSA</button>
+      <button type="button" class="nav-btn" data-view="proyectos" onclick="mostrarVista('proyectos')">Nuestros Proyectos</button>
       <button type="button" class="nav-btn" data-view="colaboraciones" onclick="mostrarVista('colaboraciones')">Colaboraciones</button>
       <button type="button" class="nav-btn" data-view="capitulos" onclick="mostrarVista('capitulos')">Crea un Capítulo Estudiantil</button>
       <button type="button" class="nav-btn nav-cta" data-view="colaboraciones" onclick="mostrarVista('colaboraciones')">Solicitar Intervención</button>
@@ -771,7 +845,7 @@
         <div class="musa-hero-left">
           <div class="musa-logo-box" id="musa-logo-container"></div>
           <p class="musa-motto" id="hero-lema">EL ARTE NUESTRO LENGUAJE,<br><span>LA SALUD NUESTRO MENSAJE.</span></p>
-          <p class="musa-official-sub" id="hero-subtitulo">“GRUPO ESTUDIANTIL PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”</p>
+          <p class="musa-official-sub" id="hero-subtitulo">“RED NACIONAL DE ENFERMERÍA PARA LA PROMOCIÓN Y EDUCACIÓN EN SALUD A TRAVÉS DE LA ARTETERAPIA”</p>
           <div class="hero-btns">
             <button type="button" class="musa-btn" onclick="mostrarVista('colaboraciones')">Colaboraciones</button>
             <button type="button" class="musa-btn outline" onclick="mostrarVista('capitulos')">Crea un Capítulo Estudiantil</button>
@@ -840,7 +914,115 @@
     </section>
   </main>
 
-  <!-- VISTA 2: COLABORACIONES -->
+  <!-- VISTA 2: RED DE ENFERMERÍA -->
+  <section id="vista-red-enfermeria" class="view-section">
+    <div class="section-banner-header">
+      <h1 class="display-title" id="red-titulo">RED DE ENFERMERÍA</h1>
+      <p id="red-intro"></p>
+    </div>
+
+    <div class="axes-section">
+      <div class="axes-header">
+        <h2 class="display-title" style="color:var(--musa-deep-purple);">¿QUÉ HACEMOS?</h2>
+        <p id="red-pilares-intro" style="max-width:680px; margin:0.5rem auto 0; color:var(--text-muted);"></p>
+      </div>
+      <div class="axes-grid" id="red-pilares-container"></div>
+    </div>
+
+    <div class="axes-section">
+      <div class="axes-header">
+        <h2 class="display-title">ACTUALIZACIÓN CONTINUA EN SALUD</h2>
+        <p id="red-cap-intro" style="max-width:680px; margin:0.5rem auto 0; color:var(--text-muted);"></p>
+      </div>
+      <div class="axes-grid" id="red-capacitaciones-container"></div>
+    </div>
+
+    <div class="musa-blog-wrap">
+      <h2 class="display-title">ACTIVIDADES DESTACADAS</h2>
+      <p style="text-align:center; color:var(--text-muted); margin-bottom:1.5rem;">Publicaciones del blog etiquetadas bajo <strong>ENFERMERÍA</strong>.</p>
+      <div id="red-blog-list"></div>
+    </div>
+  </section>
+
+  <!-- VISTA 3: SER PARTE DE MUSA -->
+  <section id="vista-ser-parte" class="view-section">
+    <div class="section-banner-header">
+      <h1 class="display-title" id="serparte-titulo">SÉ PARTE DE NUESTRA RED DE ENFERMERÍA</h1>
+      <p id="serparte-intro"></p>
+    </div>
+
+    <div class="hybrid-section">
+      <div class="panel-cream" style="margin-bottom:2rem;">
+        <h2 class="display-title" style="font-size:1.85rem; margin-bottom:0.5rem;" id="serparte-beneficios-titulo">¿QUÉ HACEMOS COMO RED?</h2>
+        <div id="serparte-descripcion" style="color:var(--text-muted); margin-bottom:1rem;"></div>
+        <ul id="serparte-requisitos-lista"></ul>
+      </div>
+
+      <div class="hybrid-grid" id="serparte-opciones-container"></div>
+
+      <div class="form-box" id="formulario-ser-parte">
+        <h3 class="display-title" style="font-size:1.75rem; color:var(--musa-deep-purple); margin-bottom:0.4rem;">SOLICITA INFORMACIÓN PARA UNIRTE</h3>
+        <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1.5rem;">Déjanos tus datos y nos pondremos en contacto contigo desde <strong>contacto@somosmusa.com.mx</strong>.</p>
+
+        <form id="joinForm" action="https://formsubmit.co/contacto@somosmusa.com.mx" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud para ser parte de MUSA - Red de Enfermería" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="join-nombre">Nombre completo</label>
+              <input type="text" id="join-nombre" name="nombre" required placeholder="Ej. Mariana Torres" />
+            </div>
+            <div class="form-group">
+              <label for="join-correo">Correo electrónico</label>
+              <input type="email" id="join-correo" name="correo" required placeholder="nombre@correo.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="join-whatsapp">Teléfono para WhatsApp</label>
+              <input type="tel" id="join-whatsapp" name="whatsapp" required placeholder="Ej. 477 000 0000" />
+            </div>
+            <div class="form-group">
+              <label for="join-perfil">¿Cuál es tu perfil?</label>
+              <select id="join-perfil" name="perfil" required>
+                <option value="" disabled selected>Selecciona una opción...</option>
+                <option value="Graduado / Lic. en Enfermería">Graduado / Licenciado(a) en Enfermería</option>
+                <option value="Estudiante de Enfermería (MUSA ALUMNI)">Estudiante de Enfermería (Interés en MUSA ALUMNI)</option>
+                <option value="Estudiante de Enfermería (Capítulo Estudiantil)">Estudiante de Enfermería (Interés en crear Capítulo Estudiantil)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="musa-btn">Solicitar información</button>
+          <p id="joinFeedback" style="margin-top:0.85rem; font-weight:700; font-size:0.9rem; color:var(--musa-deep-purple);"></p>
+        </form>
+
+        <div class="info-callout" id="serparte-correo-info">
+          ¿Necesitas más información específica sobre la Red de Enfermería? Escríbenos directamente a <a href="mailto:enfermeria@somosmusa.com.mx">enfermeria@somosmusa.com.mx</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISTA 4: NUESTROS PROYECTOS -->
+  <section id="vista-proyectos" class="view-section">
+    <div class="section-banner-header">
+      <h1 class="display-title" id="proyectos-titulo">NUESTROS PROYECTOS</h1>
+      <p id="proyectos-intro"></p>
+    </div>
+
+    <div class="musa-blog-wrap">
+      <div class="cta-banner-projects">
+        <h3 id="proyectos-cta-titulo">¿TIENES UNA ORGANIZACIÓN Y TE INTERESA LLEVAR ALGUNO DE NUESTROS PROYECTOS?</h3>
+        <p id="proyectos-cta-texto">Adaptamos nuestras intervenciones de arteterapia y promoción de la salud a escuelas, casas hogar, empresas e instituciones.</p>
+        <button type="button" class="musa-btn-light" onclick="mostrarVista('colaboraciones')">Solicitar una intervención</button>
+      </div>
+
+      <div id="proyectos-list"></div>
+    </div>
+  </section>
+
+  <!-- VISTA 5: COLABORACIONES -->
   <section id="vista-colaboraciones" class="view-section">
     <div class="collab-section">
       <div class="collab-container">
@@ -913,7 +1095,7 @@
     </div>
   </section>
 
-  <!-- VISTA 3: CREA UN CAPÍTULO ESTUDIANTIL -->
+  <!-- VISTA 6: CREA UN CAPÍTULO ESTUDIANTIL -->
   <section id="vista-capitulos" class="view-section">
     <div class="gov-section">
       <div class="gov-container">
@@ -992,7 +1174,7 @@
     </div>
   </section>
 
-  <!-- VISTA 4: BLOG -->
+  <!-- VISTA 7: BLOG -->
   <section id="vista-blog" class="view-section">
     <div class="musa-blog-wrap" id="musa-blog-section">
       <h2 class="display-title">BLOG MUSA</h2>
@@ -1100,7 +1282,11 @@
     }
 
     function normalizarTag(tag) {
-      return String(tag || '').trim().toLowerCase();
+      return String(tag || '')
+        .trim()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
     }
 
     function renderizarCarrusel() {
@@ -1177,6 +1363,32 @@
       if (indiceBlog < 0) return;
       mostrarVista('blog');
       setTimeout(() => openMusaPost(indiceBlog), 50);
+    }
+
+    function renderizarActividadesEnfermeria() {
+      const container = document.getElementById('red-blog-list');
+      const postsEnfermeria = musaPosts.filter(p =>
+        (p.tags || []).some(t => normalizarTag(t) === 'enfermeria')
+      );
+
+      if (postsEnfermeria.length === 0) {
+        container.innerHTML = `<div class="musa-post-card"><p style="color:var(--text-muted);">Aún no hay publicaciones etiquetadas con <strong>ENFERMERÍA</strong>.</p></div>`;
+        return;
+      }
+
+      container.innerHTML = postsEnfermeria.map(p => {
+        const indiceReal = musaPosts.indexOf(p);
+        return `
+          <article class="musa-post-card">
+            ${p.imagen ? `<img src="${p.imagen}" class="musa-post-cover" alt="${p.titulo}">` : ''}
+            <div style="margin-bottom:0.5rem;">${(p.tags || []).map(t => `<span class="musa-tag">${t}</span>`).join('')}</div>
+            <div style="font-size:0.82rem; font-weight:700; color:var(--musa-blue); margin-bottom:0.3rem;">${p.fecha || ''}</div>
+            <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--musa-deep-purple);">${p.titulo || ''}</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">${p.resumen || ''}</p>
+            <button type="button" class="musa-btn" style="margin-top:0.9rem;" onclick="abrirEntradaDesdeCarrusel(${indiceReal})">Leer publicación</button>
+          </article>
+        `;
+      }).join('');
     }
 
     function renderizarCarruselCapitulos() {
@@ -1291,6 +1503,7 @@
       try {
         const res = await fetch('datos.json?v=' + Date.now());
         const data = await res.json();
+        const colors = ['', 'blue', 'lilac'];
 
         if (data.portada) {
           document.getElementById('hero-lema').innerHTML = `${data.portada.lemaParte1 || ''}<br><span>${data.portada.lemaParte2 || ''}</span>`;
@@ -1325,15 +1538,98 @@
 
         if (data.ejes) {
           document.getElementById('ejes-intro').textContent = data.ejes.intro || '';
-          const colors = ['', 'blue', 'lilac'];
           document.getElementById('ejes-container').innerHTML = (data.ejes.lista || []).map((eje, idx) => `
             <div class="axis-card ${colors[idx % 3]}">
-              <h3>${eje.titulo}</h3>
-              <div class="axis-sub">${eje.subtitulo}</div>
-              <div style="font-size:0.94rem; color:var(--text-muted);">${marked.parse(eje.descripcion || '')}</div>
+              <div>
+                <h3>${eje.titulo}</h3>
+                <div class="axis-sub">${eje.subtitulo}</div>
+                <div style="font-size:0.94rem; color:var(--text-muted);">${marked.parse(eje.descripcion || '')}</div>
+              </div>
               ${eje.imagen ? `<img src="${eje.imagen}" alt="${eje.titulo}">` : ''}
             </div>
           `).join('');
+        }
+
+        if (data.redEnfermeria) {
+          document.getElementById('red-titulo').textContent = data.redEnfermeria.titulo || 'RED DE ENFERMERÍA';
+          document.getElementById('red-intro').textContent = data.redEnfermeria.intro || '';
+          document.getElementById('red-pilares-intro').textContent = data.redEnfermeria.pilaresIntro || '';
+          document.getElementById('red-pilares-container').innerHTML = (data.redEnfermeria.pilares || []).map((p, idx) => `
+            <div class="axis-card ${colors[idx % 3]}">
+              <div>
+                <h3>${p.titulo}</h3>
+                <div class="axis-sub">${p.subtitulo || ''}</div>
+                <div style="font-size:0.94rem; color:var(--text-muted);">${marked.parse(p.descripcion || '')}</div>
+              </div>
+              ${p.imagen ? `<img src="${p.imagen}" alt="${p.titulo}">` : ''}
+            </div>
+          `).join('');
+
+          document.getElementById('red-cap-intro').textContent = data.redEnfermeria.capacitacionesIntro || '';
+          document.getElementById('red-capacitaciones-container').innerHTML = (data.redEnfermeria.capacitaciones || []).map((c, idx) => `
+            <div class="axis-card ${colors[idx % 3]}">
+              <div>
+                <h3>${c.titulo}</h3>
+                <div class="axis-sub">${c.fecha || ''} ${c.estado ? '· ' + c.estado : ''}</div>
+                <div style="font-size:0.94rem; color:var(--text-muted);">${marked.parse(c.descripcion || '')}</div>
+              </div>
+              ${c.imagen ? `<img src="${c.imagen}" alt="${c.titulo}">` : ''}
+            </div>
+          `).join('');
+        }
+
+        if (data.serParte) {
+          document.getElementById('serparte-titulo').textContent = data.serParte.titulo || 'SÉ PARTE DE NUESTRA RED DE ENFERMERÍA';
+          document.getElementById('serparte-intro').textContent = data.serParte.intro || '';
+          document.getElementById('serparte-beneficios-titulo').textContent = data.serParte.beneficiosTitulo || '¿QUÉ HACEMOS COMO RED?';
+          document.getElementById('serparte-descripcion').innerHTML = marked.parse(data.serParte.descripcion || '');
+          document.getElementById('serparte-requisitos-lista').innerHTML = (data.serParte.puntos || [])
+            .map(item => `<li>${item}</li>`).join('');
+
+          document.getElementById('serparte-opciones-container').innerHTML = (data.serParte.opcionesEstudiantes || []).map((op, idx) => `
+            <div class="hybrid-card ${idx === 0 ? 'private' : 'public'}">
+              <div>
+                <span class="musa-tag">${op.etiqueta || 'Estudiantes'}</span>
+                <h3>${op.titulo || ''}</h3>
+                <p style="font-size:0.95rem; color:var(--text-muted);">${op.descripcion || ''}</p>
+                <ul>${(op.puntos || []).map(pt => `<li>${pt}</li>`).join('')}</ul>
+              </div>
+              ${op.accion === 'capitulos'
+                ? `<button type="button" class="musa-btn outline" onclick="mostrarVista('capitulos')">${op.textoBoton || 'Ir a Capítulos Estudiantiles'}</button>`
+                : `<button type="button" class="musa-btn" onclick="document.getElementById('formulario-ser-parte').scrollIntoView({behavior:'smooth'})">${op.textoBoton || 'Pedir información'}</button>`}
+            </div>
+          `).join('');
+
+          if (data.serParte.formspreeUrl) {
+            document.getElementById('joinForm').setAttribute('action', data.serParte.formspreeUrl);
+          }
+          if (data.serParte.correoMasInfo) {
+            document.getElementById('serparte-correo-info').innerHTML =
+              `¿Necesitas más información específica sobre la Red de Enfermería? Escríbenos directamente a <a href="mailto:${data.serParte.correoMasInfo}">${data.serParte.correoMasInfo}</a>.`;
+          }
+        }
+
+        if (data.proyectos) {
+          document.getElementById('proyectos-titulo').textContent = data.proyectos.titulo || 'NUESTROS PROYECTOS';
+          document.getElementById('proyectos-intro').textContent = data.proyectos.intro || '';
+          if (data.proyectos.ctaTitulo) document.getElementById('proyectos-cta-titulo').textContent = data.proyectos.ctaTitulo;
+          if (data.proyectos.ctaTexto) document.getElementById('proyectos-cta-texto').textContent = data.proyectos.ctaTexto;
+
+          const pList = document.getElementById('proyectos-list');
+          const listaProyectos = data.proyectos.lista || [];
+          if (listaProyectos.length === 0) {
+            pList.innerHTML = `<div class="musa-post-card"><p style="color:var(--text-muted);">Próximamente publicaremos nuestros proyectos.</p></div>`;
+          } else {
+            pList.innerHTML = listaProyectos.map(pr => `
+              <article class="musa-post-card">
+                ${pr.imagen ? `<img src="${pr.imagen}" class="musa-post-cover" alt="${pr.titulo}">` : ''}
+                <div style="margin-bottom:0.5rem;">${(pr.tags || []).map(t => `<span class="musa-tag">${t}</span>`).join('')}</div>
+                ${pr.subtitulo ? `<div style="font-size:0.82rem; font-weight:700; color:var(--musa-blue); margin-bottom:0.3rem;">${pr.subtitulo}</div>` : ''}
+                <h3 style="font-size:1.35rem; margin-bottom:0.5rem; color:var(--musa-deep-purple);">${pr.titulo || ''}</h3>
+                <div style="color:var(--text-muted); font-size:0.95rem;">${marked.parse(pr.descripcion || '')}</div>
+              </article>
+            `).join('');
+          }
         }
 
         if (data.conviccion) {
@@ -1396,6 +1692,7 @@
         construirBarraTags();
         renderizarListaBlog();
         renderizarCarrusel();
+        renderizarActividadesEnfermeria();
         reiniciarTemporizadorCarrusel();
 
         if (data.contacto) {
@@ -1427,6 +1724,14 @@
       document.getElementById('tag-filter-bar').style.display = 'flex';
       document.getElementById('musa-posts-list').style.display = 'block';
     }
+
+    document.getElementById('joinForm').addEventListener('submit', function(e) {
+      if (this.getAttribute('action') === '#') {
+        e.preventDefault();
+        document.getElementById('joinFeedback').textContent = 'Solicitud registrada en vista previa (configura formspreeUrl en datos.json para recibir envíos).';
+        this.reset();
+      }
+    });
 
     document.getElementById('colabForm').addEventListener('submit', function(e) {
       if (this.getAttribute('action') === '#') {
