@@ -12,9 +12,6 @@ content:
         label: Portada
         type: object
         fields:
-          - name: nombre
-            label: Nombre
-            type: string
           - name: lemaParte1
             label: Lema (parte 1)
             type: string
@@ -89,6 +86,146 @@ content:
               - name: imagen
                 label: Imagen del eje
                 type: image
+      - name: redEnfermeria
+        label: Red de Enfermería
+        type: object
+        fields:
+          - name: titulo
+            label: Título de la sección
+            type: string
+          - name: intro
+            label: Introducción principal
+            type: text
+          - name: pilaresIntro
+            label: Introducción de ¿Qué hacemos?
+            type: text
+          - name: pilares
+            label: Pilares de acción
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: descripcion
+                label: Descripción (Markdown)
+                type: text
+              - name: imagen
+                label: Imagen
+                type: image
+          - name: capacitacionesIntro
+            label: Introducción de Actualización Continua en Salud
+            type: text
+          - name: capacitaciones
+            label: Capacitaciones (hechas o próximas)
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Nombre de la capacitación
+                type: string
+              - name: fecha
+                label: Fecha
+                type: string
+              - name: estado
+                label: Estado (Realizada / Próximamente)
+                type: string
+              - name: descripcion
+                label: Descripción (Markdown)
+                type: text
+              - name: imagen
+                label: Imagen
+                type: image
+      - name: serParte
+        label: Ser Parte de MUSA
+        type: object
+        fields:
+          - name: titulo
+            label: Título principal
+            type: string
+          - name: intro
+            label: Introducción
+            type: text
+          - name: beneficiosTitulo
+            label: Subtítulo de beneficios y requisitos
+            type: string
+          - name: descripcion
+            label: Descripción general (Markdown)
+            type: text
+          - name: puntos
+            label: Puntos clave / requisitos
+            type: string
+            list: true
+          - name: opcionesEstudiantes
+            label: Opciones para Estudiantes (MUSA ALUMNI / Capítulos)
+            type: object
+            list: true
+            fields:
+              - name: etiqueta
+                label: Etiqueta
+                type: string
+              - name: titulo
+                label: Título
+                type: string
+              - name: descripcion
+                label: Descripción
+                type: text
+              - name: puntos
+                label: Puntos
+                type: string
+                list: true
+              - name: textoBoton
+                label: Texto del botón
+                type: string
+              - name: accion
+                label: Acción (formulario o capitulos)
+                type: string
+          - name: formspreeUrl
+            label: URL de formulario (Formsubmit)
+            type: string
+          - name: correoMasInfo
+            label: Correo para más información
+            type: string
+      - name: proyectos
+        label: Nuestros Proyectos
+        type: object
+        fields:
+          - name: titulo
+            label: Título de la sección
+            type: string
+          - name: intro
+            label: Introducción
+            type: text
+          - name: ctaTitulo
+            label: Título del banner de invitación
+            type: string
+          - name: ctaTexto
+            label: Texto del banner de invitación
+            type: text
+          - name: lista
+            label: Proyectos de MUSA
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Nombre del proyecto
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: tags
+                label: Etiquetas
+                type: string
+                list: true
+              - name: imagen
+                label: Fotografía del proyecto
+                type: image
+              - name: descripcion
+                label: Descripción (Markdown)
+                type: text
       - name: conviccion
         label: Nuestra Convicción
         type: object
@@ -220,7 +357,7 @@ content:
                 label: Texto del botón
                 type: string
       - name: noticias
-        label: Entradas del Blog (usa tags como post, destacado, capitulos)
+        label: Entradas del Blog (usa tags como post, destacado, ENFERMERÍA, capitulos)
         type: object
         list: true
         fields:
