@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviso de Privacidad | MUSA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --musa-deep-purple: #4a145c;
+      --musa-lilac: #c59cd9;
+      --musa-lilac-soft: #efe5f5;
+      --musa-blue: #7d93c8;
+      --musa-sky: #ebf3ff;
+      --musa-cream: #fcfbf5;
+      --text-dark: #1f1627;
+      --text-muted: #4b3f54;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--musa-cream);
+      color: var(--text-dark);
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .display-title {
+      font-family: 'Anton', Impact, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.08;
+    }
+
+    .topbar {
+      background: #ffffff;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--musa-lilac);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .brand-nav {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.45rem;
+      color: var(--musa-deep-purple);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .musa-btn {
+      background-color: var(--musa-deep-purple);
+      color: #ffffff;
+      border: 2px solid var(--musa-deep-purple);
+      padding: 0.55rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.15s ease, background-color 0.15s ease;
+    }
+
+    .musa-btn:hover {
+      opacity: 0.92;
+    }
+
+    .musa-btn.outline {
+      background-color: transparent;
+      color: var(--musa-deep-purple);
+    }
+
+    .musa-btn.outline:hover {
+      background-color: var(--musa-lilac-soft);
+      opacity: 1;
+    }
+
+    .privacy-hero {
+      background: linear-gradient(135deg, var(--musa-lilac-soft) 0%, var(--musa-sky) 100%);
+      border-bottom: 3px solid var(--musa-lilac);
+      padding: 3rem 1.25rem;
+      text-align: center;
+    }
+
+    .privacy-hero .badge {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--musa-deep-purple);
+      border: 1.5px solid var(--musa-lilac);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .privacy-hero h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3rem);
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.65rem;
+    }
+
+    .privacy-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .privacy-container {
+      max-width: 900px;
+      margin: 2.5rem auto 3.5rem;
+      padding: 0 1.25rem;
+      width: 100%;
+    }
+
+    .privacy-card {
+      background: #ffffff;
+      border: 2px solid var(--musa-lilac);
+      border-radius: 22px;
+      padding: 2.25rem;
+      box-shadow: 0 8px 24px rgba(74, 20, 92, 0.06);
+    }
+
+    @media (max-width: 640px) {
+      .privacy-card {
+        padding: 1.4rem;
+      }
+    }
+
+    .privacy-section {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--musa-lilac-soft);
+    }
+
+    .privacy-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .privacy-section h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.4rem;
+      color: var(--musa-deep-purple);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.02em;
+    }
+
+    .privacy-section p {
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
+      font-size: 0.96rem;
+    }
+
+    .privacy-section ul {
+      margin: 0.5rem 0 1rem 1.35rem;
+      color: var(--text-dark);
+      font-size: 0.95rem;
+    }
+
+    .privacy-section li {
+      margin-bottom: 0.45rem;
+    }
+
+    .highlight-box {
+      background: var(--musa-lilac-soft);
+      border-left: 5px solid var(--musa-deep-purple);
+      border-radius: 12px;
+      padding: 1.1rem 1.3rem;
+      margin: 1rem 0;
+      color: var(--text-dark);
+      font-size: 0.94rem;
+    }
+
+    .highlight-box.blue-accent {
+      background: var(--musa-sky);
+      border-left-color: var(--musa-blue);
+    }
+
+    .privacy-section a {
+      color: var(--musa-deep-purple);
+      font-weight: 700;
+    }
+
+    .privacy-footer-actions {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid var(--musa-lilac-soft);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      background-color: var(--musa-deep-purple);
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--musa-lilac);
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="https://somosmusa.com.mx" class="brand-nav">MUSA</a>
+    <a href="https://somosmusa.com.mx" class="musa-btn outline">← Volver al inicio</a>
+  </header>
+
+  <section class="privacy-hero">
+    <div class="badge">Protección de Datos Personales</div>
+    <h1 class="display-title">AVISO DE PRIVACIDAD</h1>
+    <p>Transparencia y cuidado en el tratamiento de los datos personales recabados a través de nuestros formularios, sitio web y canales de correo electrónico de MUSA.</p>
+  </section>
+
+  <main class="privacy-container">
+    <article class="privacy-card">
+
+      <section class="privacy-section">
+        <h2>1. IDENTIDAD Y DOMICILIO DEL RESPONSABLE</h2>
+        <p><strong>MUSA</strong> (Red Nacional de Enfermería para la Promoción y Educación en Salud a través de la Arteterapia), con operación en León, Guanajuato, México, y sitio web oficial en <a href="https://somosmusa.com.mx">https://somosmusa.com.mx</a>, es responsable del tratamiento de los datos personales que usted nos proporcione, conforme a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+        <p>Para cualquier duda o seguimiento relacionado con este aviso, ponemos a su disposición el correo electrónico oficial: <a href="mailto:contacto@somosmusa.com.mx">contacto@somosmusa.com.mx</a>.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2>2. DATOS PERSONALES QUE RECABAMOS</h2>
+        <p>Recabamos únicamente los datos de identificación y contacto que usted ingresa de forma voluntaria en nuestros formularios o nos comparte por correo electrónico:</p>
+        <ul>
+          <li>Nombre completo.</li>
+          <li>Correo electrónico.</li>
+          <li>Número de teléfono y/o WhatsApp.</li>
+          <li>Institución educativa, organización, empresa o comunidad de procedencia.</li>
+          <li>Ciudad y estado de ubicación.</li>
+          <li>Perfil académico o profesional (estudiante o licenciado en Enfermería, u otra carrera).</li>
+          <li>Información general del mensaje o solicitud (fechas tentativas, tipo de colaboración o propuesta de capítulo).</li>
+        </ul>
+        <div class="highlight-box">
+          <strong>Datos sensibles:</strong> A través de los formularios de este sitio web <strong>no recabamos datos personales sensibles</strong> (tales como diagnósticos médicos, historiales clínicos, afiliación sindical, creencias religiosas o datos financieros).
+        </div>
+      </section>
+
+      <section class="privacy-section">
+        <h2>3. FINALIDADES DEL TRATAMIENTO DE DATOS</h2>
+        <p><strong>Finalidades primarias</strong> (necesarias para atender su solicitud):</p>
+        <ul>
+          <li>Dar seguimiento a solicitudes de colaboraciones, talleres, cotizaciones o brigadas comunitarias.</li>
+          <li>Gestionar solicitudes de integración a la Red de Enfermería o a iniciativas estudiantiles como MUSA ALUMNI.</li>
+          <li>Evaluar y acompañar propuestas para la conformación de nuevos Capítulos Estudiantiles.</li>
+          <li>Responder consultas, enviar confirmaciones y coordinar actividades operativas o académicas.</li>
+        </ul>
+
+        <p><strong>Finalidades secundarias</strong> (adicionales y no indispensables para el trámite inicial):</p>
+        <ul>
+          <li>Compartir invitaciones a capacitaciones, congresos, talleres o convocatorias de MUSA.</li>
+          <li>Enviar información sobre nuevos proyectos, actividades comunitarias o publicaciones.</li>
+        </ul>
+        <p>Si no desea que sus datos se utilicen para finalidades secundarias, puede solicitarlo en cualquier momento escribiendo a <a href="mailto:contacto@somosmusa.com.mx">contacto@somosmusa.com.mx</a>.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2>4. TRANSFERENCIA Y RESGUARDO DE LA INFORMACIÓN</h2>
+        <p>MUSA no vende, alquila ni comercializa sus datos personales. La información enviada mediante los formularios y correos electrónicos es gestionada a través de herramientas digitales de comunicación y alojamiento utilizadas para la operación de MUSA, procurando medidas administrativas y técnicas razonables para proteger su confidencialidad.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2>5. DERECHOS ARCO Y REVOCACIÓN DEL CONSENTIMIENTO</h2>
+        <p>Usted tiene derecho a <strong>Acceder</strong> a sus datos personales en nuestro poder, <strong>Rectificarlos</strong> si son inexactos o incompletos, <strong>Cancelarlos</strong> cuando considere que no se requieren para las finalidades señaladas, u <strong>Oponerse</strong> a su tratamiento para fines específicos (Derechos ARCO), así como a revocar su consentimiento.</p>
+        <p>Para ejercer estos derechos, envíe un correo a <a href="mailto:contacto@somosmusa.com.mx">contacto@somosmusa.com.mx</a> con el asunto <em>“Derechos ARCO — MUSA”</em>, indicando:</p>
+        <ul>
+          <li>Su nombre completo y el medio para comunicarle la respuesta.</li>
+          <li>El derecho que desea ejercer y una descripción clara de su solicitud.</li>
+        </ul>
+        <p>Atenderemos su solicitud dentro de un plazo máximo de 15 días hábiles.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2>6. CONFIDENCIALIDAD EN CORREOS ELECTRÓNICOS (@somosmusa.com.mx)</h2>
+        <div class="highlight-box blue-accent">
+          Los mensajes enviados desde las cuentas institucionales de <strong>@somosmusa.com.mx</strong> (incluyendo el acceso web en <em>correo.somosmusa.com.mx</em>) y sus archivos adjuntos pueden contener información dirigida exclusivamente a su destinatario. Si usted recibe un correo por error, le pedimos notificarlo de inmediato al remitente, eliminar el mensaje y abstenerse de copiarlo, reenviarlo o divulgar su contenido.
+        </div>
+      </section>
+
+      <section class="privacy-section">
+        <h2>7. ACTUALIZACIONES AL AVISO DE PRIVACIDAD</h2>
+        <p>El presente Aviso de Privacidad puede actualizarse por cambios normativos o ajustes operativos de MUSA. Cualquier modificación será publicada en esta misma dirección: <a href="https://somosmusa.com.mx/aviso-privacidad.html">https://somosmusa.com.mx/aviso-privacidad.html</a>.</p>
+      </section>
+
+      <div class="privacy-footer-actions">
+        <span>Última actualización: <strong>Noviembre de 2026</strong></span>
+        <a href="https://somosmusa.com.mx" class="musa-btn">Ir a somosmusa.com.mx</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>MUSA · El arte nuestro lenguaje, la salud nuestro mensaje · <a href="mailto:contacto@somosmusa.com.mx">contacto@somosmusa.com.mx</a></p>
+  </footer>
+
+</body>
+</html>
