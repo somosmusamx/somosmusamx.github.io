@@ -70,20 +70,20 @@
     "capacitaciones": [
       {
         "titulo": "PRIMEROS AUXILIOS PSICOLÓGICOS",
-        "fecha": "Próximamente",
+        "fecha": "Contínuo",
         "estado": "Capacitación",
         "descripcion": "Herramientas prácticas de contención emocional y acompañamiento inicial desde el enfoque de enfermería."
       },
       {
         "titulo": "ARTETERAPIA EN SALUD COMUNITARIA",
-        "fecha": "2026",
-        "estado": "Realizada",
+        "fecha": "Contínuo",
+        "estado": "Capacitación",
         "descripcion": "Diseño de intervenciones artísticas con objetivos claros de promoción y educación para la salud."
       },
       {
         "titulo": "EDUCACIÓN PARA LA SALUD Y PREVENCIÓN",
-        "fecha": "2026",
-        "estado": "Continua",
+        "fecha": "Contínuo",
+        "estado": "Capacitación",
         "descripcion": "Actualización en estrategias participativas para abordar temas de autocuidado en distintas etapas de la vida."
       }
     ]
@@ -158,7 +158,16 @@
           "Comunidad",
           "Salud Emocional"
         ],
-        "descripcion": "**Jardín MUSA** es una experiencia participativa donde niñas, niños, jóvenes y adultos crean flores y elementos simbólicos mientras exploran herramientas de expresión emocional y autocuidado."
+        "imagen": "/img/Portada_musa-1.webp",
+        "descripcion": "El **Jardín MUSA** es una instalación artística interactiva y un espacio de arteterapia comunitaria donde cada participante da vida a sus emociones a través de la creación de flores únicas, construyendo en conjunto un entorno vibrante y lleno de significado.\n\nInspirado en la obra A Line Florist de la artista Anna Bruder —reconocida por transformar el arte en experiencias lúdicas y participativas—, este proyecto traslada la dinámica de una florería creativa al ámbito del bienestar emocional. De este modo, los asistentes dejan de ser simples espectadores para convertirse en protagonistas de la obra.\n\nLos pilares que hacen especial al Jardín MUSA\n**Expresión más allá de las palabras:** Cada flor elaborada a mano funciona como una metáfora visual. La elección de colores, formas y texturas permite exteriorizar sentimientos, pensamientos o estados de ánimo que en ocasiones resultan difíciles de verbalizar.\n\n**Pausa y atención plena:** El proceso manual de diseñar, recortar y ensamblar ofrece un respiro frente al ritmo acelerado de la rutina universitaria, promoviendo un momento de calma, concentración y autocuidado.\n\n**Construcción de comunidad:** Al reunir todas las piezas en un mismo espacio, el jardín evoluciona en tiempo real. El resultado final demuestra que, aunque cada proceso emocional es individual y distinto, al compartirse da lugar a un ecosistema de empatía y belleza colectiva."
+      },
+      {
+        "titulo": "Taller de Mejores Amigos",
+        "tags": [
+          "Arteterapia",
+          "Redes de Apoyo"
+        ],
+        "descripcion": "El **Taller de Mejores Amigos** es una experiencia de arteterapia enfocada en celebrar, fortalecer y reflexionar sobre los vínculos afectivos, la empatía y el acompañamiento emocional a través de la creación artística.\n\nA diferencia de una actividad recreativa convencional, este taller utiliza el proceso creativo como un puente para conectar con el valor de la amistad y las redes de apoyo, elementos fundamentales para el bienestar integral y la salud mental.\n\nLos pilares que hacen especial al Taller de Mejores Amigos\n**El arte de crear vínculos:** Invita a los participantes a reconocer qué hace significativa una amistad —la confianza, la escucha y el cuidado mutuo— y a proyectar esos valores en una creación propia.\n\n**Un objeto con sentido:** A través del trabajo manual, cada persona da forma a una pieza tangible que simboliza compañía, afecto o gratitud, convirtiendo una emoción abstracta en un recuerdo que perdura.\n\n**Espacio seguro y de pertenencia:** Promueve una dinámica cálida y participativa donde el diálogo surge de manera natural mientras se trabaja con las manos, reforzando la integración grupal y el sentido de comunidad."
       }
     ]
   },
